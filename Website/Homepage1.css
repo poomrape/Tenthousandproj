@@ -1,0 +1,335 @@
+
+#backgroundmainpage1{
+    width: 1920px; 
+    height: 1080px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background-color: #161A2A;
+}
+#image1{
+    width: 1052px; 
+    height: 979px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute
+}
+#faderimage1{
+    width: 1051px; 
+    height: 979px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: linear-gradient(270deg, #161A2A 0%, rgba(22.40, 25.54, 42.06, 0.66) 73%, rgba(22.40, 25.54, 42.06, 0) 100%)
+}
+#menubarcontainer{ 
+    width: 100%; 
+    height: 10px;  
+    background: #161A2A
+}
+#textstart{
+    color: #FAFAFF;
+    font-size: 32px;
+    font-family: Kanit;
+    margin-left: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    word-wrap: break-word
+}
+/* Add a gray right border to all list items, except the last item (last-child) */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+#header1{
+    width: 725px; 
+    left: 95px; 
+    top: 250px; 
+    position: absolute; 
+    color: #FAFAFF; 
+    font-size: 90px; 
+    font-family: Kanit; 
+    font-weight: 600; 
+    word-wrap: break-word
+}
+#underline1{
+    width: 725px; 
+    height: 0px; 
+    left: 95px; 
+    top: 530px; 
+    position: absolute; 
+    border: 6px #FAFAFF solid
+}
+#background2{
+    width: 1919px; 
+    height: 156px; 
+    left: 1px; 
+    top: 924px; 
+    position: absolute; 
+    background: #1ED760
+}
+#buttoncon1{
+    width: 311px; 
+    height: 103px; 
+    left: 300px; 
+    top: 650px; 
+    position: absolute; 
+    background: #1ED760; 
+    border-radius: 15px
+}
+#buttonletter1{
+    width: 156px; 
+    left: 378px; 
+    top: 675px; 
+    position: absolute; 
+    color: #FAFAFF; 
+    font-size: 36px; 
+    font-family: Kanit; 
+    font-weight: 600; 
+    word-wrap: break-word
+}
+#backgroundsubpage1{
+    width: 1920px; 
+    height: 720px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: #FAFAFF
+}
+#Image2{
+    width: 1056.07px; 
+    height: 720px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute
+}
+#head2{
+    width: 664px; 
+    left: 1194px; 
+    top: 70px; 
+    position: absolute; 
+    text-align: right; 
+    color: #161A2A; 
+    font-size: 64px; 
+    font-family: Kanit; 
+    font-weight: 500; 
+    word-wrap: break-word
+}
+#underline2{
+    width: 600px; 
+    height: 0px; 
+    left: 1258px; 
+    top: 196px; 
+    position: absolute; 
+    border: 10px #161A2A solid
+}
+#text1{
+    width: 749px; 
+    left: 1109px; 
+    top: 228px; 
+    position: absolute; 
+    text-align: right; 
+    color: #161A2A; 
+    font-size: 34px; 
+    font-family: kanit; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+#background3{
+    width: 1920px; 
+    height: 750px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: #161A2A
+}
+#head3{
+    width: 412px; 
+    height: 162px; 
+    left: 774px; 
+    top: 21px; 
+    position: absolute; 
+    text-align: center; 
+    color: #FAFAFF; 
+    font-size: 60px; 
+    font-family: Kanit; 
+    font-weight: 500; 
+    letter-spacing: 12px; 
+    word-wrap: break-word
+}
+#subhead1{
+    left: 88px; 
+    top: 170px; 
+    position: absolute; 
+    text-align: center; 
+    color: #FAFAFF; 
+    font-size: 40px; 
+    font-family: kanit; 
+    font-weight: 600; 
+    word-wrap: break-word
+}
+#subhead2{
+    left: 617px; 
+    top: 170px; 
+    position: absolute; 
+    text-align: center; 
+    color: #FAFAFF; 
+    font-size: 40px; 
+    font-family: kanit; 
+    font-weight: 600; 
+    word-wrap: break-word
+}
+#subhead3{
+    left: 1113px; 
+    top: 170px; 
+    position: absolute; 
+    text-align: center; 
+    color: #FAFAFF; 
+    font-size: 40px; 
+    font-family: kanit; 
+    font-weight: 600; 
+    word-wrap: break-word
+}
+#subhead4{
+    left: 1571px; 
+    top: 170px; 
+    position: absolute; 
+    text-align: center; 
+    color: #FAFAFF; 
+    font-size: 40px; 
+    font-family: kanit; 
+    font-weight: 600; 
+    word-wrap: break-word
+}
+#text2{
+    width: 364px; 
+    left: 58px; 
+    top: 600px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 24px; 
+    font-family: kanit; 
+    font-weight: 300; 
+    word-wrap: break-word
+}
+#text3{
+    width: 364px; 
+    left: 538px; 
+    top: 600px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 24px; 
+    font-family: Prompt; 
+    font-weight: 300; 
+    word-wrap: break-word
+}
+#text4{
+    width: 364px; 
+    left: 1018px; 
+    top: 600px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 24px; 
+    font-family: Prompt; 
+    font-weight: 300; 
+    word-wrap: break-word
+}
+#text5{
+    width: 364px; 
+    left: 1498px; 
+    top: 600px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 24px; 
+    font-family: Prompt; 
+    font-weight: 300; 
+    word-wrap: break-word
+
+}
+#borderline2{
+    width: 500px; 
+    height: 0px; 
+    left: 479px; 
+    top: 200px; 
+    position: absolute; 
+    transform: rotate(89.88deg); 
+    transform-origin: 0 0; 
+    border: 2px #FAFAFF solid
+
+}
+#borderline3{
+    width: 500px; 
+    height: 0px;
+     left: 959px; 
+     top: 200px; 
+     position: absolute; 
+     transform: rotate(89.88deg); 
+     transform-origin: 0 0; 
+     border: 2px #FAFAFF solid
+}
+#borderline4{
+    width: 500px; 
+    height: 0px; 
+    left: 1439px; 
+    top: 200px; 
+    position: absolute; 
+    transform: rotate(89.88deg); 
+    transform-origin: 0 0; 
+    border: 2px #FAFAFF solid
+
+}
+#Image3{
+    width: 86px; 
+    height: 117px; 
+    left: 200px; 
+    top: 356px; 
+    position: absolute; 
+}
+#Image4{
+    width: 86px; 
+    height: 114px; 
+    left: 675px; 
+    top: 356px; 
+    position: absolute; 
+}
+#Image5{
+    width: 130px; 
+    height: 140px; 
+    left: 1125px; 
+    top: 342px; 
+    position: absolute; 
+    
+}
+#Image6{
+    width: 146px; 
+    height: 146px; 
+    left: 1605px; 
+    top: 342px; 
+    position: absolute
+    
+}
