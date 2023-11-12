@@ -11,8 +11,8 @@ body {
     background-color: #161A2A;
 }
 #image1{
-    width: 1052px; 
-    height: 979px; 
+    width: 1020px; 
+    height: 800px; 
     left: 0px; 
     top: 0px; 
     position: absolute
@@ -23,7 +23,7 @@ body {
     left: 0px; 
     top: 0px; 
     position: absolute; 
-    background: linear-gradient(270deg, #161A2A 0%, rgba(22.40, 25.54, 42.06, 0.66) 73%, rgba(22.40, 25.54, 42.06, 0) 100%)
+    background: linear-gradient(90deg, #161A2A 0%, rgba(22.40, 25.54, 42.06, 0.66) 25%, rgba(22.40, 25.54, 42.06, 0) 80%)
 }
 #menubarcontainer{ 
     width: 100%; 
@@ -90,7 +90,7 @@ ul {
 #background2{
     width: 1919px; 
     height: 156px; 
-    left: 1px; 
+    left: 0px; 
     top: 924px; 
     position: absolute; 
     background: #1ED760
@@ -118,7 +118,7 @@ ul {
 #backgroundsubpage1{
     width: 1920px; 
     height: 720px; 
-    left: 0px; 
+    left: 10px; 
     top: 0px; 
     position: absolute; 
     background: #FAFAFF
