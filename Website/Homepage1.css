@@ -1,3 +1,6 @@
+body {
+    font-family: "Kanit", sans-serif;
+  }
 
 #backgroundmainpage1{
     width: 1920px; 
@@ -132,7 +135,7 @@ ul {
     text-align: right; 
     color: #161A2A; 
     font-size: 64px; 
-    font-family: Kanit; 
+    font-family: "Kanit", sans-serif;
     font-weight: 500; 
     word-wrap: break-word
 }
@@ -152,7 +155,7 @@ ul {
     text-align: right; 
     color: #161A2A; 
     font-size: 34px; 
-    font-family: kanit; 
+    font-family: "Kanit", sans-serif;
     font-weight: 400; 
     word-wrap: break-word
 }
@@ -173,7 +176,7 @@ ul {
     text-align: center; 
     color: #FAFAFF; 
     font-size: 60px; 
-    font-family: Kanit; 
+    font-family: "Kanit", sans-serif;
     font-weight: 500; 
     letter-spacing: 12px; 
     word-wrap: break-word
@@ -185,7 +188,7 @@ ul {
     text-align: center; 
     color: #FAFAFF; 
     font-size: 40px; 
-    font-family: kanit; 
+    font-family: "Kanit", sans-serif;
     font-weight: 600; 
     word-wrap: break-word
 }
@@ -196,7 +199,7 @@ ul {
     text-align: center; 
     color: #FAFAFF; 
     font-size: 40px; 
-    font-family: kanit; 
+    font-family: "Kanit", sans-serif;
     font-weight: 600; 
     word-wrap: break-word
 }
@@ -207,7 +210,7 @@ ul {
     text-align: center; 
     color: #FAFAFF; 
     font-size: 40px; 
-    font-family: kanit; 
+    font-family: "Kanit", sans-serif;
     font-weight: 600; 
     word-wrap: break-word
 }
@@ -218,7 +221,7 @@ ul {
     text-align: center; 
     color: #FAFAFF; 
     font-size: 40px; 
-    font-family: kanit; 
+    font-family: "Kanit", sans-serif;
     font-weight: 600; 
     word-wrap: break-word
 }
@@ -230,7 +233,7 @@ ul {
     text-align: center; 
     color: white; 
     font-size: 24px; 
-    font-family: kanit; 
+    font-family: "Kanit", sans-serif;
     font-weight: 300; 
     word-wrap: break-word
 }
@@ -242,7 +245,7 @@ ul {
     text-align: center; 
     color: white; 
     font-size: 24px; 
-    font-family: Prompt; 
+    font-family: "Prompt"; 
     font-weight: 300; 
     word-wrap: break-word
 }
@@ -254,7 +257,7 @@ ul {
     text-align: center; 
     color: white; 
     font-size: 24px; 
-    font-family: Prompt; 
+    font-family: "Prompt"; 
     font-weight: 300; 
     word-wrap: break-word
 }
@@ -266,7 +269,7 @@ ul {
     text-align: center; 
     color: white; 
     font-size: 24px; 
-    font-family: Prompt; 
+    font-family: "Prompt"; 
     font-weight: 300; 
     word-wrap: break-word
 
