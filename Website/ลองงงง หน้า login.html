@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
+  <title>ลอง Login Page</title>
 </head>
-<link rel="stylesheet" href="หน้า loginnnnnn.css">
+<link rel="stylesheet" href="ลองงงง หน้า loginnnnnn.css">
 <style>
   /* ใช้ CSS เพื่อกำหนดขนาดของกรอบ */
   body {
       background: linear-gradient(90deg, #1ED760 0%, #3D8D59 51%); /* กำหนดไล่เฉดสี */
-      height: 100vh; /* กำหนดความสูงของหน้าเว็บเต็มหน้าจอ */
+      height: 90vh; /* กำหนดความสูงของหน้าเว็บเต็มหน้าจอ */
       margin: 0; /* ลบ margin ที่ถูกกำหนดมาตั้งแต่แรก */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      max-width: 1920px; /* ปรับตามต้องการ */
-      /* max-height: 1080px; กำหนดความสูงของหน้าเว็บ */
+      max-width: 1500px; /* ปรับตามต้องการ */
+      max-height: 1000px;  /*กำหนดความสูงของหน้าเว็บ*/
       /* margin: 0 auto; ทำให้กรอบอยู่กึ่งกลางหน้าจอ */
   }
   form {
@@ -31,35 +31,31 @@
     <img id="LoginPic1" src="Coim 2.png" />
     <!--บล็อค Sign in ฝั่งขวา-->
     <div id="LoginRMbox1">
-      <div style="width: 1025px; height: 1000px; left: 0px; top: 0px; position: absolute; background: #FAFAFF; border-top-left-radius: 50px; border-top-right-radius: 50px"></div>
+      <!-- <div style="width: 1025px; height: 1000px; left: 0px; top: 0px; position: absolute; background: #FAFAFF; border-top-left-radius: 50px; border-top-right-radius: 50px"></div> -->
       <!-- Sing in ถึง กรอก password-->
       <div style="width: 598px; height: 482px; left: 20%; top: 5%; position: absolute">
         <div id="HeadSignin">Sign in</div>
         <div id="SubSignin">ลงชื่อเข้าใช้แล้วใช้งานเลย!</div>
-        <!-- <div style="width: 598px; height: 80px; left: 0px; top: 268px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
-          <div class="box" style="width: 598px; height: 80px; background: #FAFAFF; border-radius: 10px; border: 3px #161A2A solid"></div>
-        </div> -->
-        <!-- <div style="width: 598px; height: 80px; left: 0px; top: 402px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
-          <div class="box" style="width: 598px; height: 80px; background: #FAFAFF; border-radius: 10px; border: 3px #161A2A solid"></div>
-        </div> -->
-        <div style="width: 114px; height: 30px; left: 25px; top: 361px; position: absolute">
-          <div style="left: 25px; top: 0px; position: absolute; color: #161A2A; font-size: 20px; font-family: Prompt; font-weight: 400; word-wrap: break-word">Password</div>
-          <div style="width: 18px; height: 21px; left: 0px; top: 5px; position: absolute; background: #161A2A"></div>
+
+        <div class="formtext" id="Usertext"><img src="Picusername.svg" alt="รูปภาพ Username" width="24" height="24"> Username</div>
+        <div class="formbox" id="Usernamebox"></div>
+        
+        <div class="formtext" id="Passwordtext"><img src="Picpassword.svg" alt="รูปภาพ Password" width="24" height="24"> Password</div>
+        <div class="formbox" id="Passwordbox"></div>
+
+        <div id= "Remembertext"><p style="width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border: 3px solid #000;
+            border-radius: 10px; /* กำหนดรัศมีของมุมทั้ง 4 มุมเป็น 20px */
+            color: #fff;
+            text-align: center;
+            line-height: 100px;">
+            Remember me</p>
         </div>
-        <div style="width: 124px; height: 30px; left: 22px; top: 232px; position: absolute">
-          <div style="left: 28px; top: 0px; position: absolute; color: #161A2A; font-size: 20px; font-family: Prompt; font-weight: 400; word-wrap: break-word">Username</div>
-          <div style="width: 24px; height: 24px; left: 0px; top: 3px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-            <div style="width: 16px; height: 21px; background: #161A2A"></div>
-            <!-- <form action="#" method="post">
-              <label for="name">ชื่อ:</label>
-              <input type="text" id="name" name="name" size="50">
-              <input type="submit" value="บันทึก">
-          </form> -->
-          </div>
-        </div>
-      </div>
-      <div style="width: 143px; height: 39px; left: 352px; top: 565px; position: absolute; color: #161A2A; font-size: 20px; font-family: Prompt; font-weight: 300; word-wrap: break-word">Remember me</div>
-      <div style="left: 820px; top: 569px; position: absolute; text-align: right; color: #161A2A; font-size: 20px; font-family: Prompt; font-weight: 300; word-wrap: break-word">Register</div>
+        <div style="left: 820px; top: 569px; position: absolute; text-align: right; color: #161A2A; font-size: 20px; font-family: Prompt; font-weight: 300; word-wrap: break-word">Register</div>
+    </div>
+      
       <!-- ขีดส่วนล่าง -->
       <div style="width: 626px; height: 39.55px; left: 20%; top: 744px; position: absolute">
         <div style="width: 626px; height: 0px; left: 0px; top: 20.64px; position: absolute; border: 2px #161A2A solid"></div>
