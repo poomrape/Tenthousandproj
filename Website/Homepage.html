@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="Homepage1.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+    <script type="text/javascript" src="homepage.js"></script>
     <body>
         <ul>
-            <li><a href="#home">เริ่มใช้งาน</a></li>
+            <li><a onclick="goto_loginpage()">เริ่มใช้งาน</a></li>
             <li><a href="#news">คุณสมบัติ</a></li>
             <li><a href="#contact">เกี่ยวกับ</a></li>
-            <li style="float:right"><a class="active" href="#about">Log in</a></li>
+            <li style="float:right"><a class="active" onclick="goto_loginpage()">Log in</a></li>
           </ul>
         <div style="width: 100%; height: 100%; position: relative">
             <div style="width: 1920px; height: 1080px; left: 0px; top: 0px; position: absolute; background: linear-gradient(0deg, 0%, 100%), linear-gradient(0deg, #FAFAFF 0%, #FAFAFF 100%)"></div>    
@@ -27,18 +28,19 @@
         </div>
 
         <div style="width: 100%; height: 100%; position: relative; box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25)">
-            <div id="buttoncon1" ></div>
-            <div id="buttonletter1">เริ่มใช้งาน</div>
+            <button onclick="goto_loginpage()" class="buttoncon1" >เริ่มใช้งาน</div>
+                
+            </div>
             </div>
         
-        <div style="width: 1920px; height: 720px; left: 0px; top: 1080px; position: absolute">
+        <div id="contact" style="width: 1920px; height: 720px; left: 0px; top: 1080px; position: absolute">
             <div id="backgroundsubpage1" ></div>
             <img id="Image2" src="Image2.png" />
             <div id="head2">Ten Thousand Project</div>
             <div id="text1">คือเว็ปไซต์ที่ดึงข้อมูลร้านอาหาร/ร้านขายของชำและอื่นๆที่อยู่ในเกณฑ์ที่กำหนดของรัฐบาล โดยที่จะอิงจากหมุดที่ปักในแผนที่ระยะ4กม.(ตามโครงการของรัฐบาลที่ได้ประกาศไว้) จากนั้นแสดงข้อมูลตำแหน่งบนแผนที่, ระยะทาง(อิงตาม google map) ,ชื่อร้านนั้นๆ และแสดงสถานะการให้บริการ(เปิด-ปิด)โดยมีการแสดงผลข้อมูลออกมาเป็นลิสต์ เรียงลำดับจากระยะทางน้อยไปมากซึ่งเป็นการแสดงผลข้อมูลอย่างง่ายทำให้ผู้ใช้เกิดความเข้าใจในข้อมูล </div>
             <div id="underline2"></div>
             </div>
-        <div style="width: 1920px; height: 750px; left: 0px; top: 1800px; position: absolute">
+        <div id="news" style="width: 1920px; height: 750px; left: 0px; top: 1800px; position: absolute">
             <div id="background3"></div>
             <div id="head3">FEATURE</div>
             <div id="subhead1">Sign in/Sign up</div>
