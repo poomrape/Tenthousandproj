@@ -10,14 +10,15 @@
   /* ใช้ CSS เพื่อกำหนดขนาดของกรอบ */
   body {
       background: linear-gradient(90deg, #1ED760 0%, #3D8D59 51%); /* กำหนดไล่เฉดสี */
-      height: 90vh; /* กำหนดความสูงของหน้าเว็บเต็มหน้าจอ */
+      width: 100vw;
+      height: 100vh; /* กำหนดความสูงของหน้าเว็บเต็มหน้าจอ */
       margin: 0; /* ลบ margin ที่ถูกกำหนดมาตั้งแต่แรก */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       max-width: 1500px; /* ปรับตามต้องการ */
-      max-height: 1000px;  /*กำหนดความสูงของหน้าเว็บ*/
+      max-height: 1000px;  /*กำหนดความสูงของหน้าเว็บ */
       /* margin: 0 auto; ทำให้กรอบอยู่กึ่งกลางหน้าจอ */
   }
   form {
@@ -43,35 +44,18 @@
         <div class="formtext" id="Passwordtext"><img src="Picpassword.svg" alt="รูปภาพ Password" width="24" height="24"> Password</div>
         <div class="formbox" id="Passwordbox"></div>
 
-        <div id= "Remembertext"><p style="width: 40px;
-            height: 40px;
-            background-color: #fff;
-            border: 3px solid #000;
-            border-radius: 10px; /* กำหนดรัศมีของมุมทั้ง 4 มุมเป็น 20px */
-            color: #fff;
-            text-align: center;
-            line-height: 100px;">
-            Remember me</p>
-        </div>
-        <div style="left: 820px; top: 569px; position: absolute; text-align: right; color: #161A2A; font-size: 20px; font-family: Prompt; font-weight: 300; word-wrap: break-word">Register</div>
-    </div>
-      
+        <div id= "Remembertext"><img src="Picremember.svg" alt="กรอบติ๊กใช่-ไม่ใช่" width="40" height="40"> Remember me</div>
+        <div id="Registertext">Register</div>
+
+        <!-- <div id ="Lo"></div> -->
+
+      </div>
       <!-- ขีดส่วนล่าง -->
-      <div style="width: 626px; height: 39.55px; left: 20%; top: 744px; position: absolute">
-        <div style="width: 626px; height: 0px; left: 0px; top: 20.64px; position: absolute; border: 2px #161A2A solid"></div>
-        <div style="width: 251.09px; height: 39.55px; left: 187px; top: 0px; position: absolute; background: #FAFAFF"></div>
-        <div style="left: 242px; top: 6.64px; position: absolute; text-align: center"><span style="color: #161A2A; font-size: 16px; font-family: Prompt; font-weight: 700; word-wrap: break-word">Login</span><span style="color: #161A2A; font-size: 16px; font-family: Prompt; font-weight: 400; word-wrap: break-word"> with Others</span></div>
-      </div>
-      <div style="width: 598px; height: 85.43px; left: 301px; top: 827px; position: absolute">
-        <div style="width: 598px; height: 85.43px; left: 0px; top: 0px; position: absolute; border-radius: 13px; border: 1px #161A2A solid"></div>
-        <div style="width: 236.43px; height: 49.29px; left: 180.71px; top: 18.07px; position: absolute">
-          <div style="width: 174.14px; left: 62.29px; top: 13.93px; position: absolute; text-align: center"><span style="color: #161A2A; font-size: 16px; font-family: Prompt; font-weight: 400; word-wrap: break-word">Login with </span><span style="color: #161A2A; font-size: 16px; font-family: Prompt; font-weight: 700; word-wrap: break-word">google</span></div>
-          <img style="width: 49.29px; height: 49.29px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/49x49" />
-        </div>
-      </div>
-      <div style="width: 39px; height: 39px; left: 301px; top: 565px; position: absolute">
-        <div style="width: 39px; height: 39px; left: 0px; top: 0px; position: absolute; background: #FAFAFF; border-radius: 8px; border: 3px #161A2A solid"></div>
-      </div>
+      <!-- <div style="width: 626px; height: 39.55px; left: 20%; top: 744px; position: absolute"> -->
+        
+        <!-- <div style="left: 242px; top: 6.64px; position: absolute; text-align: center"><span style="color: #161A2A; font-size: 16px; font-family: Prompt; font-weight: 700; word-wrap: break-word">Login</span><span style="color: #161A2A; font-size: 16px; font-family: Prompt; font-weight: 400; word-wrap: break-word"> with Others</span></div> -->
+      <!-- </div> -->
+        
       <!--Remember me / Register-->
       <div style="width: 532px; height: 76px; left: 334px; top: 624px; position: absolute">
         <div style="width: 532px; height: 76px; left: 0px; top: 0px; position: absolute; background: #161A2A; border-radius: 13px"></div>

@@ -1,26 +1,32 @@
 body {
     font-family: "Kanit", sans-serif;
-    
+    max-width: 1500px; /* ปรับตามต้องการ */
+    max-height: 1000px;  /*กำหนดความสูงของหน้าเว็บ */
+    margin: 0;
   }
 
 #backgroundmainpage1{
-    width: 1920px; 
-    height: 1080px; 
+    width: 100vw;
+    height: 100vh;
+    /* width: 1920px; 
+    height: 1080px;  */
     left: 0px; 
     top: 0px; 
     position: absolute; 
     background-color: #161A2A;
 }
 #image1{
-    width: 1020px; 
-    height: 800px; 
+    width: 50vw;
+    height: 50vh;
+    /* width: 1020px; 
+    height: 800px;  */
     left: 0px; 
     top: 0px; 
     position: absolute
 }
 #faderimage1{
-    width: 1051px; 
-    height: 979px; 
+    width: 50vw; 
+    height: 600px; 
     left: 0px; 
     top: 0px; 
     position: absolute; 
@@ -44,7 +50,8 @@ body {
 /* Add a gray right border to all list items, except the last item (last-child) */
 ul {
     list-style-type: none;
-    width: 1920px;
+    width: 100vw;
+    /* width: 1920px; */
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -89,7 +96,8 @@ ul {
     border: 6px #FAFAFF solid
 }
 #background2{
-    width: 1919px; 
+    width: 100vw;
+    /* width: 1919px;  */
     height: 156px; 
     left: 0px; 
     top: 924px; 
@@ -116,7 +124,8 @@ ul {
 
 
 #backgroundsubpage1{
-    width: 1928px; 
+    width: 100vw;
+    /* width: 1928px;  */
     height: 720px; 
     left: 10px; 
     top: 0px; 
@@ -124,7 +133,8 @@ ul {
     background: #FAFAFF
 }
 #Image2{
-    width: 1056.07px; 
+    width: 50vw;
+    /* width: 1056.07px;  */
     height: 720px; 
     left: 0px; 
     top: 0px; 
@@ -132,12 +142,12 @@ ul {
 }
 #head2{
     width: 664px; 
-    left: 1194px; 
+    left: 51%; 
     top: 70px; 
     position: absolute; 
     text-align: right; 
     color: #161A2A; 
-    font-size: 64px; 
+    font-size: 62px; 
     font-family: "Kanit", sans-serif;
     font-weight: 500; 
     word-wrap: break-word
@@ -145,17 +155,17 @@ ul {
 #underline2{
     width: 600px; 
     height: 0px; 
-    left: 1258px; 
-    top: 196px; 
+    left: 54.5%; 
+    top: 175px; 
     position: absolute; 
     border: 10px #161A2A solid
 }
 #text1{
     width: 749px; 
-    left: 1109px; 
+    left: 51.5%; 
     top: 228px; 
     position: absolute; 
-    text-align: right; 
+    text-align: left; 
     color: #161A2A; 
     font-size: 34px; 
     font-family: "Kanit", sans-serif;
@@ -163,7 +173,8 @@ ul {
     word-wrap: break-word
 }
 #background3{
-    width: 1920px; 
+    width: 100vw;
+    /* width: 1920px;  */
     height: 750px; 
     left: 0px; 
     top: 0px; 
@@ -173,7 +184,7 @@ ul {
 #head3{
     width: 412px; 
     height: 162px; 
-    left: 774px; 
+    left: 50%; 
     top: 21px; 
     position: absolute; 
     text-align: center; 
@@ -184,49 +195,30 @@ ul {
     letter-spacing: 12px; 
     word-wrap: break-word
 }
-#subhead1{
-    left: 88px; 
-    top: 170px; 
+.subhead{
     position: absolute; 
     text-align: center; 
     color: #FAFAFF; 
-    font-size: 40px; 
+    font-size: 35px; 
     font-family: "Kanit", sans-serif;
     font-weight: 600; 
     word-wrap: break-word
+}
+#subhead1{
+    left: 16%; 
+    top: 170px; 
 }
 #subhead2{
-    left: 617px; 
+    left: 36%; 
     top: 170px; 
-    position: absolute; 
-    text-align: center; 
-    color: #FAFAFF; 
-    font-size: 40px; 
-    font-family: "Kanit", sans-serif;
-    font-weight: 600; 
-    word-wrap: break-word
 }
 #subhead3{
-    left: 1113px; 
+    left: 64%; 
     top: 170px; 
-    position: absolute; 
-    text-align: center; 
-    color: #FAFAFF; 
-    font-size: 40px; 
-    font-family: "Kanit", sans-serif;
-    font-weight: 600; 
-    word-wrap: break-word
 }
 #subhead4{
-    left: 1571px; 
+    left: 84%; 
     top: 170px; 
-    position: absolute; 
-    text-align: center; 
-    color: #FAFAFF; 
-    font-size: 40px; 
-    font-family: "Kanit", sans-serif;
-    font-weight: 600; 
-    word-wrap: break-word
 }
 #text2{
     width: 364px; 
