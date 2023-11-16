@@ -1,0 +1,31 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/template.css' %}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+</head>
+<body>
+
+    <img id="image1" src="{% static 'app_users/Coim 2.png' %}"/>
+        <div style="width: 102.6vh; height: 100vh; left: 40vw; top: 0vh; position: absolute;">
+            <div class="background1" >
+                <div id="center">
+                    {% block body %}
+                        <div id="text1">Sigh in</div>
+                        <div id="text2">ลงชื่อเข้าใช้งานเลย!</div>
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+</body>
+</html>
