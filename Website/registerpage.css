@@ -120,6 +120,21 @@ body{
     font-weight: 400; 
     word-wrap: break-word
 }
+.buttoncon1{
+    width: 311px; 
+    height: 103px;
+    left:105px;
+    position: absolute; 
+    background: #050505; 
+    border-radius: 15px;
+    font-size: 36px; 
+    color: #FAFAFF;
+    font-family: Kanit; 
+    font-weight: 600; }
+.buttoncon1:hover{background-color: #000000;}
+.buttoncon1:active{background-color: #404341;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);}
 #tickbox3{
     width: 16px; 
     height: 21px; 
