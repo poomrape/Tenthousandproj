@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ถ้าจะใช้ตำแหน่งปัจจุบันให้เว้นว่างไว้และถ้าจะใช้รัศมี 4 km ให้เว้นว่างไว้เหมือนกัน</h1>
+    <form method="post" action="{% url 'maps' %}">
+        {% csrf_token %}
+        {{ location_form.as_p }}
+        {{ radius_form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+    {% if error_message %}
+        <p>{{ error_message }}</p>
+    {% endif %}
+    
+    {% if shop_result %}
+        {% for shop in shop_result %}
+        <div style="background-color: gray;">
+            <p>{{ shop.name }}</p>
+            <p>{{ shop.location }}</p>
+            <p>{{ shop.rating }}</p>
+            <p>{{ shop.rating_total }}</p>
+            <p>{{ shop.rating }}</p>
+            <p>{{ shop.geo_locate_lat }}</p>
+            <p>{{ shop.geo_locate_lng }}</p>
+            <p>{{ shop.distance }}</p>
+            <p>{{ shop.time }}</p>
+        </div>
+        <p>{{ shop.total }}</p>
+        {% endfor %}
+    {% endif %}
+
+    
+</body>
+</html>
