@@ -48,7 +48,7 @@ body{
     width: 598px; 
     height: 80px; 
     left: 0px; 
-    top: 0px; 
+    top: 50px; 
     position: absolute; 
     background: #FAFAFF; 
     border-radius: 10px; 
@@ -58,7 +58,8 @@ body{
     width: 598px; 
     height: 80px; 
     left: 0px; 
-    top: 0px; 
+    top: 200px; 
+    font-size: 40;
     position: absolute; 
     background: #FAFAFF; 
     border-radius: 10px; 
@@ -86,20 +87,18 @@ body{
     width: 598px; 
     height: 80px; 
     left: 0px; 
-    top: 0px; 
+    top: -50    px; 
     position: absolute; 
     background: #FAFAFF; 
     border-radius: 10px; 
     border: 3px #161A2A solid
 }
-#text3{
-    width: 141px; 
-    left: 25px; 
-    top: 0px; 
+#text2{
+    margin: 20px,20px,20px,20px;
     position: absolute; 
     color: #161A2A; 
-    font-size: 20px; 
-    font-family: Prompt; 
+    font-size:40px; 
+    font-family: kanit; 
     font-weight: 400; 
     word-wrap: break-word
 }
@@ -112,12 +111,12 @@ body{
     background: #161A2A
 }
 #text3{
-    left: 28px; 
-    top: 0px; 
+    left:25px;
+    top: 150px; 
     position: absolute; 
     color: #161A2A; 
-    font-size: 20px; 
-    font-family: Prompt; 
+    font-size: 40px; 
+    font-family: kanit; 
     font-weight: 400; 
     word-wrap: break-word
 }
@@ -182,3 +181,16 @@ body{
     font-weight: 700; 
     word-wrap: break-word
 }
+input[type=text] {
+    width: 100%;
+    font-size: 30px;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+  }
+  
+  input[type=text]:focus {
+    background-color: lightblue;
+  }
