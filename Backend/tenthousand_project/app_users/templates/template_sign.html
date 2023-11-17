@@ -1,3 +1,4 @@
+
 {% load static %}
 
 <link rel="stylesheet" href="{% static 'css/template.css' %}">
@@ -17,30 +18,14 @@
 <body>
 
     <img id="image1" src="{% static 'app_users/Coim 2.png' %}"/>
-        <div style="width: 102.6vh; height: 100vh; left: 40vw; top: 0vh; position: absolute;">
+        <div style="width: 102.6vh; height: 100vh; left: 40vw; top: -1.8vh; position: absolute;">
             <div class="background1" >
                 <div id="center">
-                    {% block body %}
-                        <div id="text1">{% block sign %} {% endblock %}</div><br>
-                        <div id="text2">{% block quote %} {% endblock %}</div><br>
-                        <label id="Username_text" for="Username"><img src="{% static 'app_users/Picusername.svg' %}" alt="รูปภาพ Username" width="25vw" height="25vh"> Username</label>
-                        <input id="Username_block" type="text" name="Username"><br>
-                        <label id="Password_text" for="Password"><img src="{% static 'app_users/Picpassword.svg' %}" alt="รูปภาพ Username"> Password</label>
-                        <input id="Password_block" type="password" name="Password"><br>
-                        <div style="width: 39px; height: 39px; left: 301px; top: 714px; position: absolute">
-                            <form >
-                                <label id="text4" ></label>
-                                <input type="checkbox" id="tickbox4">
-                            </form> 
-                        </div>
-                        <div id="text4" >{% block text2 %}{% endblock %}</div>
-                        <div id="text5" >Register</div><br>
-                        <div style="width: 532px; height: 100px; left: 334px; top: 30vh; position: relative">
-                            <button onclick="goto_loginpage()" class="buttoncon1" type="submit">NEXT</div>
-                        </div>
+                {% block form %}
+                    
+                {% endblock %}
                         <!-- <label id="checkbox" for="remember_me"><input type="checkbox" name="remember_me">Remember Me</label> -->
 
-                    {% endblock %}
                 </div>
             </div>
         </div>

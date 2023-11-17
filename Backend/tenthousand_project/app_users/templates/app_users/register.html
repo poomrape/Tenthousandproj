@@ -1,15 +1,15 @@
 {% extends "template_sign.html" %}
 
 {% load static %}
-
 {% block title %}
-    Login
+    Signup
 {% endblock %}
 {% block form %}
-<form action="{% url 'login' %}" method="POST">
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+<form action="{% url 'register' %}" method="POST">
     {% csrf_token %}
-    <div id="text1">Log In</div><br>
-    <div id="text2">ลงชื่อเข้าใช้งานเลย!</div><br>
+    <div id="text1">Sign Up</div><br>
+    <div id="text2">สมัครง่ายๆไม่ยุ่งยาก</div><br>
     <label id="Username_text" for="Username"><img src="{% static 'app_users/Picusername.svg' %}" alt="รูปภาพ Username" width="25vw" height="25vh"> Username</label>
     <!-- <input id="Username_block" type="text" name="Username"><br> -->
 
@@ -17,14 +17,18 @@
 
     <label id="Password_text" for="Password"><img src="{% static 'app_users/Picpassword.svg' %}" alt="รูปภาพ Username"> Password</label>
 
-        {{ form.password }}
+        {{ form.password1 }}
+    
+        <label id="Re_Password_text" for="Password"><img src="{% static 'app_users/Picpassword.svg' %}" alt="รูปภาพ Username"> Re-Password</label>
+
+        {{ form.password2 }}
 
     <div style="width: 39px; height: 39px; left: 301px; top: 714px; position: absolute">
         <label id="" ></label>
-        <input type="checkbox" id="tickbox4">
+        <input type="checkbox" id="tickboxreg">
     </div>
-    <div id="text4" >Remember me</div>
-    <div id="text5" ><a href="{% url 'register'%}">Register</a></div><br>
+    <div id="textqoute" >Term and agreement</div>
+    <div id="textsign" ><a href="{% url 'login' %}">Sign In</a></div><br>
     <div style="width: 532px; height: 100px; left: 334px; top: 30vh; position: relative">
         <button onclick="goto_loginpage()" class="buttoncon1" type="submit">NEXT</div>
     </div>

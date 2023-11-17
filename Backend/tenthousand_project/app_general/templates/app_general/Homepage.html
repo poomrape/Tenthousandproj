@@ -4,18 +4,29 @@
     <head>
     <title>Ten Thousand Project</title>
     </head>
-    <link rel="stylesheet" , href="{% static 'css/homepage1.css' %}">
+    <link rel="stylesheet" , href="{% static 'css/Homepage1.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
-    <script type="text/javascript" src="{% static 'js/homepage.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/Homepage.js' %}"></script>
     <body>
         <ul>
             <li><a onclick="goto_loginpage()">เริ่มใช้งาน</a></li>
             <li><a href="#news">คุณสมบัติ</a></li>
             <li><a href="#contact">เกี่ยวกับ</a></li>
+            {% if user.is_authenticated %}
+            <li class="dropdown">
+                <button onclick="toggleDropdown()" class="dropbtn">{{ user.username }}</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a class="active" onclick="goto_loginpage()">Profile</a>
+                    <a class="active" onclick="goto_logoutpage()">Logout</a>
+                </div>
+            </li>
+            {% else %}
             <li style="float:right"><a class="active" onclick="goto_loginpage()">Log in</a></li>
+            {% endif %}
           </ul>
-        <div style="width: 100%; height: 100%; position: relative">
+          
+          <div style="width: 100%; height: 100%; position: relative">
             <div style="width: 1920px; height: 1080px; left: 0px; top: 0px; position: absolute; background: linear-gradient(0deg, 0%, 100%), linear-gradient(0deg, #FAFAFF 0%, #FAFAFF 100%)"></div>    
             <div id="backgroundmainpage1"></div>
             <div style="width: 1051px; height: 979px; left: 868px; top: 101px; position: absolute">
