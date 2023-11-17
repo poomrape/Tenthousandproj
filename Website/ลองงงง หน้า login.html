@@ -6,26 +6,7 @@
   <title>ลอง Login Page</title>
 </head>
 <link rel="stylesheet" href="ลองงงง หน้า loginnnnnn.css">
-<style>
-  /* ใช้ CSS เพื่อกำหนดขนาดของกรอบ */
-  body {
-      background: linear-gradient(90deg, #1ED760 0%, #3D8D59 51%); /* กำหนดไล่เฉดสี */
-      width: 100vw;
-      height: 100vh; /* กำหนดความสูงของหน้าเว็บเต็มหน้าจอ */
-      margin: 0; /* ลบ margin ที่ถูกกำหนดมาตั้งแต่แรก */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      max-width: 1500px; /* ปรับตามต้องการ */
-      max-height: 1000px;  /*กำหนดความสูงของหน้าเว็บ */
-      /* margin: 0 auto; ทำให้กรอบอยู่กึ่งกลางหน้าจอ */
-  }
-  form {
-      max-width: 290px; /* ปรับตามต้องการ */
-      margin: 0 auto; /* ทำให้กรอบอยู่กึ่งกลางหน้าจอ */
-  }
-</style>  
+
 <body>
 
   <div>
@@ -34,7 +15,7 @@
     <div id="LoginRMbox1">
       <!-- <div style="width: 1025px; height: 1000px; left: 0px; top: 0px; position: absolute; background: #FAFAFF; border-top-left-radius: 50px; border-top-right-radius: 50px"></div> -->
       <!-- Sing in ถึง กรอก password-->
-      <div style="width: 598px; height: 482px; left: 20%; top: 5%; position: absolute">
+      <div style="width: 598px; height: 100vh; left: 20%; top: 5%; position: absolute">
         <div id="HeadSignin">Sign in</div>
         <div id="SubSignin">ลงชื่อเข้าใช้แล้วใช้งานเลย!</div>
 
@@ -44,23 +25,20 @@
         <div class="formtext" id="Passwordtext"><img src="Picpassword.svg" alt="รูปภาพ Password" width="24" height="24"> Password</div>
         <div class="formbox" id="Passwordbox"></div>
 
-        <div id= "Remembertext"><img src="Picremember.svg" alt="กรอบติ๊กใช่-ไม่ใช่" width="40" height="40"> Remember me</div>
+        <div id= "Remembertext"><img src="Picremember.svg" alt="กรอบติ๊กใช่-ไม่ใช่" width="40" height="40">&nbsp;&nbsp;Remember me</div>
         <div id="Registertext">Register</div>
 
-        <!-- <div id ="Lo"></div> -->
+        <div id="Nextbox"><div id="Nexttext">NEXT</div></div>
 
       </div>
-      <!-- ขีดส่วนล่าง -->
-      <!-- <div style="width: 626px; height: 39.55px; left: 20%; top: 744px; position: absolute"> -->
-        
-        <!-- <div style="left: 242px; top: 6.64px; position: absolute; text-align: center"><span style="color: #161A2A; font-size: 16px; font-family: Prompt; font-weight: 700; word-wrap: break-word">Login</span><span style="color: #161A2A; font-size: 16px; font-family: Prompt; font-weight: 400; word-wrap: break-word"> with Others</span></div> -->
-      <!-- </div> -->
+      <!-- ส่วนล่าง -->
+      
         
       <!--Remember me / Register-->
-      <div style="width: 532px; height: 76px; left: 334px; top: 624px; position: absolute">
+      <!-- <div style="width: 532px; height: 76px; left: 334px; top: 624px; position: absolute">
         <div style="width: 532px; height: 76px; left: 0px; top: 0px; position: absolute; background: #161A2A; border-radius: 13px"></div>
         <div style="left: 220px; top: 11px; position: absolute; text-align: center; color: #FAFAFF; font-size: 36px; font-family: Kanit; font-weight: 700; word-wrap: break-word">NEXT</div>
-      </div>
+      </div> -->
     </div>
   </div>
 </body>
