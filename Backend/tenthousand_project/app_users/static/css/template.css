@@ -1,23 +1,41 @@
-body{
+body {
     margin: 0;
     background: linear-gradient(90deg, #1ED760 0%, #3D8D59 51%);
     overflow: hidden;
 }
-.background1{
+input[type="text"]{
+    width: 100%;
+    font-size: 3vh;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+input[type="password"]{
+    width: 100%;
+    font-size: 3vh;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+.background1 {
     width: 106.65vh; 
     height: 100vh;
     background-color: #FAFAFF;
     box-shadow: -14px 0px 26px rgba(0, 0, 0, 0.25);
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-top-left-radius: 4vw;
+    border-bottom-left-radius: 4vw;
 }
-#text1{
+#text1 {
     position: relative;
     top: 5vh;
     font-size: 8vh;
     font-family: "Kanit";
 }
-#text2{
+#text2 {
     position: relative;
     top: 6vh;
     line-height: normal;
@@ -26,8 +44,9 @@ body{
     font-size: 4vh;
     font-family: "Prompt";
 }
-#center{
+#center {
     text-align: center;
+    justify-content: center;
 }
 
 #image1 {
@@ -35,6 +54,114 @@ body{
     height: 105vh;
     overflow: hidden;
     top: -5vh;
-    left: -20px;
+    left: -2vw;
     position: relative;
 }
+#Username_text{
+    left: 12vw;
+    top: 28vh; 
+    position: absolute; 
+    color: #161A2A; 
+    font-size: 3vh; 
+    font-family: "Prompt"; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+#Username_text img {
+    position: relative;
+    width: 1.5vw;
+    top: 0.5vh;
+}
+#Username_block {
+    background: #FAFAFF;
+    position: relative;
+    border: 0.4vh #161A2A solid;
+    top: 10.3vh;
+    border-radius: 1vh;
+    width: 38vw;
+    height: 7.5vh;
+}
+
+#Password_text{
+    left: 12.3vw;
+    top: 42vh; 
+    position: absolute; 
+    color: #161A2A; 
+    font-size: 3vh; 
+    font-family: "Prompt"; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+#Password_text img {
+    position: relative;
+    width: 1.5vw;
+    top: 0.5vh;
+    left: -0.2vw;
+}
+#Password_block {
+    background: #FAFAFF;
+    position: relative;
+    border: 0.4vh #161A2A solid;
+    top: 16.3vh;
+    border-radius: 1vh;
+    width: 38vw;
+    height: 7.5vh;
+}
+
+#checkbox{
+    position: relative;
+    top: 22vh;
+    left: -24%;
+}
+
+#text4{
+    width: 216px; 
+    height: 39px; 
+    left: 15vw; 
+    top: 58vh; 
+    position: absolute; 
+    color: #161A2A; 
+    font-size: 20px; 
+    font-family: Prompt; 
+    font-weight: 300; 
+    word-wrap: break-word
+}
+#tickbox4{
+    width: 39px; 
+    height: 39px; 
+    left: -9.8vw; 
+    top: -31.5vh; 
+    position: absolute; 
+    background: #FAFAFF; 
+    border-radius: 8px; 
+    border: 3px #161A2A solid
+}
+
+.buttoncon1{
+    width: 311px; 
+    height: 103px;
+    left: -3vw;
+    position: absolute; 
+    background: #050505; 
+    border-radius: 15px;
+    font-size: 36px; 
+    color: #FAFAFF;
+    font-family: Kanit; 
+    font-weight: 600; }
+.buttoncon1:hover{background-color: #000000;}
+.buttoncon1:active{background-color: #404341;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);}
+
+#text5{
+    left: 43vw; 
+    top: 58vh; 
+    position: absolute; 
+    text-align: right; 
+    color: #161A2A; 
+    font-size: 20px; 
+    font-family: Prompt; 
+    font-weight: 300; 
+    word-wrap: break-word
+}
+
