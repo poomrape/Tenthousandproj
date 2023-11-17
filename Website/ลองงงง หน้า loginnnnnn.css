@@ -1,7 +1,21 @@
 body {
-    font-family: "Kanit";
-    
-  }
+    background: linear-gradient(90deg, #1ED760 0%, #3D8D59 51%); /* กำหนดไล่เฉดสี */
+    width: 100vw;
+    height: 100vh; /* กำหนดความสูงของหน้าเว็บเต็มหน้าจอ */
+    margin: 0; /* ลบ margin ที่ถูกกำหนดมาตั้งแต่แรก */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px; /* ปรับตามต้องการ */
+    max-height: 1000px;  /*กำหนดความสูงของหน้าเว็บ */
+    font-family: Prompt;
+    /* margin: 0 auto; ทำให้กรอบอยู่กึ่งกลางหน้าจอ */
+}
+form {
+    max-width: 290px; /* ปรับตามต้องการ */
+    margin: 0 auto; /* ทำให้กรอบอยู่กึ่งกลางหน้าจอ */
+}
 #LoginPic1{
     width: 900px ; 
     height: 900px;
@@ -34,7 +48,7 @@ body {
 }
 #SubSignin{
     left: 110px; 
-    top: 100px; 
+    top: 14%; 
     position: absolute; 
     text-align: center; 
     color: #161A2A; 
@@ -56,11 +70,11 @@ body {
 }
 #Usernamebox{
     left: 0px; 
-    top: 268px; 
+    top:  29.5%; 
 }
 #Passwordbox{
     left: 0px; 
-    top: 402px; 
+    top: 47.5%; 
 }
 .formtext{
     position: absolute; 
@@ -69,15 +83,15 @@ body {
 }
 #Usertext{
     left: 22px; 
-    top: 235px; 
+    top: 25%; 
 }
 #Passwordtext{
     left: 22px; 
-    top: 361px;
+    top: 43%;
 }
 #Remembertext{
     left: 0px; 
-    top: 500px;
+    top: 62%;
     position: absolute; 
     color: #161A2A; 
     font-size: 20px; 
@@ -87,14 +101,29 @@ body {
     align-items: center;
 }
 #Registertext{
-    left: 85%; 
-    top: 510px;
+    left: 89%; 
+    top: 62.8%;
     position: absolute; 
     color: #161A2A; 
     font-size: 20px; 
     font-family: Prompt; 
     font-weight: 300;
 }
-/* #LoginWO{
-
-} */
+#Nextbox{
+    left: 10%; 
+    top: 72%;
+    position: absolute;
+    width: 500px; /* กว้างของสี่เหลี่ยม */
+    height: 100px; /* สูงของสี่เหลี่ยม */
+    border-radius:20px;
+    background-color: #000000; /* สีพื้นหลังของสี่เหลี่ยม */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Nexttext{
+    font-size: 50px; 
+    font-family: Prompt;
+    text-align: center; 
+    color: #ffffff;
+}

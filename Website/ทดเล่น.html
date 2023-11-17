@@ -3,51 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ตัวอย่างตาราง</title>
+    <title>สี่เหลี่ยมมุมมนพร้อมข้อความ</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px; /* ระยะห่างของตาราง */
+        .container {
+            position: relative;
+            width: 200px; /* กว้างของสี่เหลี่ยม */
+            height: 100px; /* สูงของสี่เหลี่ยม */
+            background-color: #f2f2f2; /* สีพื้นหลังของสี่เหลี่ยม */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        th, td {
-            border: 1px solid #000;
-            padding: 10px;
+        .text {
             text-align: center;
-        }
-
-        th {
-            background-color: #f2f2f2; /* สีพื้นหลังของ header */
+            color: #000;
         }
     </style>
 </head>
 <body>
 
-<table>
-    <thead>
-        <tr>
-            <th>หัวข้อ 1</th>
-            <th>หัวข้อ 2</th>
-            <th>หัวข้อ 3</th>
-            <th>หัวข้อ 4</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>เนื้อหา 1-1</td>
-            <td>เนื้อหา 1-2</td>
-            <td>เนื้อหา 1-3</td>
-            <td>เนื้อหา 1-4</td>
-        </tr>
-        <tr>
-            <td>เนื้อหา 2-1</td>
-            <td>เนื้อหา 2-2</td>
-            <td>เนื้อหา 2-3</td>
-            <td>เนื้อหา 2-4</td>
-        </tr>
-    </tbody>
-</table>
+<div class="container">
+    <div class="text">
+        ข้อความกลาง
+    </div>
+</div>
+
 
 </body>
 </html>
