@@ -12,12 +12,13 @@ input[type="text"]{
     box-sizing: border-box;
     outline: none;
     background: #FAFAFF;
-    position: relative;
+    position: absolute;
     border: 0.4vh #161A2A solid;
-    top: 10.9vh;
+    top: 32.9vh;
     border-radius: 1vh;
     width: 38vw;
     height: 7.5vh;
+    left: 17%;
 }
 input[type="password"]{
     font-size: 3vh;
@@ -26,15 +27,16 @@ input[type="password"]{
     box-sizing: border-box;
     outline: none;
     background: #FAFAFF;
-    position: relative;
+    position: absolute;
     border: 0.4vh #161A2A solid;
-    top: 16.9vh;
+    top: 48.9vh;
     border-radius: 1vh;
     width: 38vw;
     height: 7.5vh;
+    left: 17%
 }
 .background1 {
-    width: 106.65vh; 
+    width: 64vw; 
     height: 103.2vh;
     background-color: #FAFAFF;
     box-shadow: -14px 0px 26px rgba(0, 0, 0, 0.25);
@@ -42,14 +44,17 @@ input[type="password"]{
     border-bottom-left-radius: 4vw;
 }
 #text1 {
-    position: relative;
+    position: absolute;
+    left: 40%;
     top: 5vh;
     font-size: 8vh;
     font-family: "Kanit";
 }
 #text2 {
-    position: relative;
-    top: 6vh;
+    position: absolute;
+
+    top: 20%;
+    left: 35%;
     line-height: normal;
     font-weight: 100;
     font-style: normal;
@@ -61,16 +66,16 @@ input[type="password"]{
 }
 
 #image1 {
-    width: auto;
+    width: 60vw;
     height: 105vh;
     overflow: hidden;
     top: -5vh;
     left: -2vw;
-    position: relative;
+    position: absolute;
 }
 #Username_text{
-    left: 13vw;
-    top: 29vh; 
+    left: 20%;
+    top: 28.5%; 
     position: absolute; 
     color: #161A2A; 
     font-size: 3vh; 
@@ -79,15 +84,16 @@ input[type="password"]{
     word-wrap: break-word
 }
 #Username_text img {
-    position: relative;
+    position: absolute;
     width: 2vw;
-    top: 0vh;
+    top: 15%;
+    left: -22%;
 }
 
 
 #Password_text{
-    left: 13vw;
-    top: 43.5vh; 
+    left: 20%;
+    top: 43.5%; 
     position: absolute; 
     color: #161A2A; 
     font-size: 3vh; 
@@ -96,14 +102,14 @@ input[type="password"]{
     word-wrap: break-word
 }
 #Password_text img {
-    position: relative;
+    position: absolute;
     width: 1.5vw;
-    top: 0.5vh;
-    left: -0.2vw;
+    top: 8%;
+    left: -24%;
 }
 #Password_block {
     background: #FAFAFF;
-    position: relative;
+    position: absolute;
     border: 0.4vh #161A2A solid;
     top: 16.3vh;
     border-radius: 1vh;
@@ -141,8 +147,9 @@ input[type="password"]{
 .buttoncon1{
     width: 311px; 
     height: 103px;
-    left: -3vw;
-    position: absolute; 
+    left: -20%;
+    top: 250%;
+    position: relative; 
     background: #050505; 
     border-radius: 15px;
     font-size: 36px; 

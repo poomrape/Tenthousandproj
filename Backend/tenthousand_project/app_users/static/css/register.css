@@ -5,7 +5,7 @@ input[name="password2"]{
     box-sizing: border-box;
     outline: none;
     background: #FAFAFF;
-    position: relative;
+    position: absolute;
     border: 0.4vh #161A2A solid;
     top: 22.9vh;
     border-radius: 1vh;
