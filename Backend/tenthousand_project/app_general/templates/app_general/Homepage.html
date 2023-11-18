@@ -17,7 +17,7 @@
             <li class="dropdown">
                 <button onclick="toggleDropdown()" class="dropbtn">{{ user.username }}</button>
                 <div id="myDropdown" class="dropdown-content">
-                    <a class="active" onclick="goto_loginpage()">Profile</a>
+                    <a class="active" href="{% url 'expense_list' %}">Profile</a>
                     <a class="active" onclick="goto_logoutpage()">Logout</a>
                 </div>
             </li>

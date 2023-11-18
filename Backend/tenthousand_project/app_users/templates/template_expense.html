@@ -1,0 +1,33 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/template_expense.css' %}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+<script type="text/javascript" src="{% static 'js/expense.js' %}"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="header_white">
+        <p class="text_in_header">{{ total_amount|floatformat:'g' }}</p>
+    </div>
+    <div class="sub_header">
+        <ul class="head">
+            <li class="main_li"><a href="{% url 'login' %}">{{ user.username }}   |</a></li>
+            <li class="main_li"><a href="{% url 'home' %}">หน้าแรก</a></li>
+            <li class="main_li"><a href="{% url 'maps' %}">กำหนดตำแหน่ง</a></li>
+            <li class= "main_li" id="logout"><a href="{% url 'logout' %}">Logout</a></li>
+        </ul>
+    </div>
+    {% block content %}
+    {% endblock %}
+    {% block ADD %}
+    {% endblock %}
+</body>
+
+</html>

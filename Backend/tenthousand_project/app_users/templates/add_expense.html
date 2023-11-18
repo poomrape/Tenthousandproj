@@ -1,0 +1,26 @@
+{% extends "template_expense.html" %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/expense_add.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <h2 id="head">กรอกข้อมูล</h2>
+        <form method="post" action="{% url 'add_expense' %}">
+            {% csrf_token %}
+            <h2>จำนวนเงิน</h2>
+            {{ form.amount }}<br>
+            <h2>ชื่อร้าน</h2>
+            {{ form.description }}<br>
+            <h2>วันที่</h2>   
+            {{ form.date }}<br>
+            <button type="submit">SAVE</button>
+        </form>
+        <a class="Back" href="{% url 'expense_list' %}">Back to Expense List</a>
+        <script>
+            flatpickr('#id_date', {
+                enableTime: false,
+                dateFormat: 'Y-m-d',
+                defaultDate: 'today'
+            });
+        </script>
+{% endblock %}

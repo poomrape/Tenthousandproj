@@ -1,0 +1,22 @@
+{% extends "template_expense.html" %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/expense_list.css' %}">
+    <ul class="list_pro">
+        {% for expense in expenses %}
+            <div id="list_amount">
+                {{ expense.amount|floatformat:'g' }}
+            </div>
+            <div id="list_description">
+                {{ expense.description }} 
+            </div>
+            <div id="delete">
+                <a href="{% url 'delete_expense' expense.id %}">Delete</a>
+            </div>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
+{% block ADD %}
+    <a href="{% url 'add_expense' %}" class="ADD round">ADD</a>
+{% endblock %}

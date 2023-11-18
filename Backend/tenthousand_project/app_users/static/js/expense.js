@@ -1,13 +1,13 @@
 function goto_loginpage (){
-    window.location.href = "users/login";
+    window.location.href = "\login";
 }
 
 function goto_userinfomationpage (){
-    window.location.href = "users/list";
+    window.location.href = "\login";
 }
 
 function goto_logoutpage (){
-    window.location.href = "users/logout"
+    window.location.href = "\login"
 }
 
 function toggleDropdown() {
