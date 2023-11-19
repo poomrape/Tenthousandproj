@@ -6,6 +6,7 @@
   <title>Login Page</title>
 </head>
 <link rel="stylesheet" href="Loginpage.css">
+<script src="Loginpage.js"></script>
 
 <body>
 
@@ -27,11 +28,16 @@
           <input class="formbox" id="Passwordbox" type="text" name="Username">
 
           <label id= "Remembertext"><input type="checkbox">&nbsp;&nbsp;Remember me</label>
-          <div id="Registertext"><a href="regiterpage.html">Register</a></div>
+          <div id="Registertext"><a href="regiterpage.html"class="Textlink">Register</a></div>
 
-          <!-- <div id="Registertext">Register</div> -->
 
-          <div id="Nextbox"><div id="Nexttext">NEXT</div>
+          <div style="left: 10%;top: 72%;position: absolute;"><button onclick="check_value()" id="Nexttext" class="Nextbox">NEXT</div>
+          
+          <!-- <div style="width: 532px; height: 100px; left: 334px; top: 773px; position: absolute">
+            <button onclick="goto_loginpage()" class="buttoncon1" >NEXT</div> -->
+
+          <!-- <div id="Nextbox"><div id="Nexttext">NEXT</div> -->
+
         </form>
       </div>
       <!-- ส่วนล่าง -->
