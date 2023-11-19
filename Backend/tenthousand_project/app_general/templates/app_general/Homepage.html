@@ -10,7 +10,11 @@
     <script type="text/javascript" src="{% static 'js/Homepage.js' %}"></script>
     <body>
         <ul>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'maps' %}">เริ่มใช้งาน</a></li>
+            {% else %}
             <li><a onclick="goto_loginpage()">เริ่มใช้งาน</a></li>
+            {% endif %}
             <li><a href="#news">คุณสมบัติ</a></li>
             <li><a href="#contact">เกี่ยวกับ</a></li>
             {% if user.is_authenticated %}
@@ -24,56 +28,51 @@
             {% else %}
             <li style="float:right"><a class="active" onclick="goto_loginpage()">Log in</a></li>
             {% endif %}
-          </ul>
+        </ul>
           
-          <div style="width: 100%; height: 100%; position: relative">
-            <div style="width: 1920px; height: 1080px; left: 0px; top: 0px; position: absolute; background: linear-gradient(0deg, 0%, 100%), linear-gradient(0deg, #FAFAFF 0%, #FAFAFF 100%)"></div>    
-            <div id="backgroundmainpage1"></div>
-            <div style="width: 1051px; height: 979px; left: 868px; top: 101px; position: absolute">
-                <img id="image1" src="{% static 'app_general/bangkok-city-thailand 1.png' %}" />
-                <div id="faderimage1"></div>
-            </div>
-        <div id="header1">แผนที่ระบุตำแหน่ง<br/>ร้านค้าในรัศมี</div>
-        <div id="underline1"></div>
-        <div id="background2" ></div>
-        
-        </div>
-
-        <div style="width: 100%; height: 100%; position: relative; box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25)">
+        <div style="width: 100vw; height: 600px;background-color: #161A2A; position: relative">
+        <!-- <div style="width 100vw ; height: 1000px;position: relative"> -->
+            <img class ="overlay" id="image1" src="{% static 'app_general/bangkok-city-thailand 1.png' %}">
+            <!-- <div id="faderimage1"></div> -->
+            <div id="header1">แผนที่ระบุตำแหน่ง<br/>ร้านค้าในรัศมี</div>
+            <div id="underline1"></div>
+            {% if user.is_authenticated %}
+            <button onclick="goto_maps()" class="buttoncon1" >เริ่มใช้งาน</div>
+            {% else %}
             <button onclick="goto_loginpage()" class="buttoncon1" >เริ่มใช้งาน</div>
-                
-            </div>
-            </div>
-        
-        <div id="contact" style="width: 100vw; height: 720px; left: 0px; top: 1080px; position: absolute">
-            <div id="backgroundsubpage1" ></div>
-            <img id="Image2" src="{% static 'app_general/Image2.png' %}" />
-            <div id="head2">Ten Thousand Project</div>
-            <div id="text1">”นโยบาย Digital wallet 10,000 บาท ใช้จ่ายในรัศมี 4 กม. บรรเทาปัญหาปากท้องและกระตุ้นเศรษฐกิจครั้งใหญ่“ คือคำกล่าวที่ทำให้พวกเราได้เกิดข้อสงสัยขึ้น ว่าในรัศมีที่ดังกล่าวมีร้านค้าอะไรบ้าง จึงเกิดเป็นโครงงานนี้ขึ้นมา</div>
-            <div id="underline2"></div>
-            </div>
-        <div id="news" style="width: 100vw; height: 750px; left: 0px; top: 1800px; position: absolute">
-            <div id="background3"></div>
-            <div id="head3">FEATURE</div>
-            <div class="subhead" id="subhead1">Sign in/Sign up</div>
-            <div class="subhead" id="subhead2">ระบุตำแหน่ง</div>
-            <div class="subhead" id="subhead3">การนำทาง</div>
-            <div class="subhead" id="subhead4">ระบบโปรไฟล์</div>
-            <div id="borderline2" ></div>
-            <div id="borderline3"></div>
-            <div id="borderline4"></div>
-            <div id="text2">Lorem ipsum dolor sit amet consectetur. Non massa id </div>
-            <div id="text3">Lorem ipsum dolor sit amet consectetur. Non massa id </div>
-            <div id="text4">Lorem ipsum dolor sit amet consectetur. Non massa id </div>
-            <div id="text5" >Lorem ipsum dolor sit amet consectetur. Non massa id </div>
-            <img id="Image3" src="{% static 'app_general/Subtract.png' %}">
-            <img id="Image4" src="{% static 'app_general/Vector.png' %}">
-            <img id="Image5"src="{% static 'app_general/pin.png' %}">
-            <img id="Image6"src="{% static 'app_general/Vector2.png' %}">
+            {% endif %}
+            <div style="width: auto;">
+                <img style="width: 100vw;top: 150px; z-index: 5; position:relative;" src="{% static 'app_general/PicwaveW.svg' %}">
+                <img style="width: 100vw;top: 0%; z-index: 4; position:relative;" src="{% static 'app_general/PicwaveG.svg' %}">
             
+            <div id="contact" style="width: 100vw; height: 720px; left: 0px; top: 0px;background-color: #FAFAFF; position: relative">
+                    <img id="Image2" src="{% static 'app_general/Image2.png' %}" />
+                    <div id="head2">Ten Thousand Project</div>
+                    <div id="text1">”นโยบาย Digital wallet 10,000 บาท ใช้จ่ายในรัศมี 4 กม. บรรเทาปัญหาปากท้องและกระตุ้นเศรษฐกิจครั้งใหญ่“ คือคำกล่าวที่ทำให้พวกเราได้เกิดข้อสงสัยขึ้น ว่าในรัศมีที่ดังกล่าวมีร้านค้าอะไรบ้าง จึงเกิดเป็นโครงงานนี้ขึ้นมา</div>
+                    <div id="underline2"></div>
+                    </div>
+            </div>
         </div>
+        <div style="width :100vw;height: 700px;margin:0px;bottom:0%;align-items: center;position: relative">
+            <h2 id="news">FEATURE</h2>
+            <div class="grid-container" style="position: relative ; top:-80px">
+                <div class="grid-item subhead">Sign in/Sign up</div>
+                <div class="grid-item subhead">ระบุตำแหน่ง</div>
+                <div class="grid-item subhead">การนำทาง</div>
+                <div class="grid-item subhead">ระบบโปรไฟล์</div>
+                <div class="grid-item"><img src="{% static 'app_general/PicHPF1.svg' %}" alt="รูปภาพ 5"></div>
+                <div class="grid-item"><img src="{% static 'app_general/PicHPF2.svg' %}" alt="รูปภาพ 6"></div>
+                <div class="grid-item"><img src="{% static 'app_general/PicHPF3.svg' %}" alt="รูปภาพ 7"></div>
+                <div class="grid-item"><img src="{% static 'app_general/PicHPF4.svg' %}" alt="รูปภาพ 8"></div>
+                <div class="grid-item Ftext">Lorem ipsum dolor sit amet consectetur. Non massa id</div>
+                <div class="grid-item Ftext">Lorem ipsum dolor sit amet consectetur. Non massa id</div>
+                <div class="grid-item Ftext">Lorem ipsum dolor sit amet consectetur. Non massa id</div>
+                <div class="grid-item Ftext">Lorem ipsum dolor sit amet consectetur. Non massa id</div>
+                <p><div class="vertical-line"style="left:25%"></div><div class="vertical-line"style="left:50%"></div><div class="vertical-line"style="left:75%"></div>
+                </p>
+            </div>
         </div>
-
+        <div id="Nextbox"><div id="Nexttext">Copyright © 2023 Ten Thousand Project. All rights reserved.</div>
 
     </body>
 </html>

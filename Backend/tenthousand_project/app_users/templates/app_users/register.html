@@ -23,14 +23,16 @@
 
         {{ form.password2 }}<br>
 
-    <div style="width: 39px; height: 39px; left: 301px; top: 714px; position: absolute">
+    <!-- <div style="width: 39px; height: 39px; left: 301px; top: 714px; position: absolute">
         <label id="" ></label>
         <input type="checkbox" id="tickboxreg">
     </div>
-    <div id="textqoute" >Term and agreement</div>
+    <div id="textqoute" >Term and agreement</div> -->
     <div id="textsign" ><a href="{% url 'login' %}">Sign In</a></div><br>
-    <div style="width: 532px; height: 100px; left: 334px; top: 30vh; position: relative">
-        <button onclick="goto_loginpage()" class="buttoncon1" type="submit">NEXT</div>
+</div>
+    <div style="width: 532px; height: 100px; top: 30vh; position: relative">
+        <button onclick="goto_loginpage()" class="buttoncon1" type="submit">NEXT
     </div>
+    
 </form>
 {% endblock %}

@@ -22,6 +22,7 @@
             <li class="main_li"><a href="{% url 'home' %}">หน้าแรก</a></li>
             <li class="main_li"><a href="{% url 'maps' %}">กำหนดตำแหน่ง</a></li>
             <li class= "main_li" id="logout"><a href="{% url 'logout' %}">Logout</a></li>
+            {% block li %} {% endblock %}
         </ul>
     </div>
     {% block content %}

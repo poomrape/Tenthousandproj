@@ -36,7 +36,7 @@ input[type="password"]{
     left: 17%
 }
 .background1 {
-    width: 64vw; 
+    width: 110%; 
     height: 103.2vh;
     background-color: #FAFAFF;
     box-shadow: -14px 0px 26px rgba(0, 0, 0, 0.25);
@@ -93,7 +93,7 @@ input[type="password"]{
 
 #Password_text{
     left: 20%;
-    top: 43.5%; 
+    top: 44.5%; 
     position: absolute; 
     color: #161A2A; 
     font-size: 3vh; 
@@ -124,7 +124,7 @@ input[type="password"]{
 } */
 
 #text4{
-    left: 15.5vw; 
+    left: 14.2vw; 
     top: 58vh; 
     position: absolute; 
     color: #161A2A; 
@@ -144,22 +144,6 @@ input[type="password"]{
     border: 3px #161A2A solid
 }
 
-.buttoncon1{
-    width: 311px; 
-    height: 103px;
-    left: -20%;
-    top: 250%;
-    position: relative; 
-    background: #050505; 
-    border-radius: 15px;
-    font-size: 36px; 
-    color: #FAFAFF;
-    font-family: Kanit; 
-    font-weight: 600; }
-.buttoncon1:hover{background-color: #000000;}
-.buttoncon1:active{background-color: #404341;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);}
 
 #text5{
     left: 44.5vw; 

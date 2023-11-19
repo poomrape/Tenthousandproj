@@ -6,6 +6,7 @@
     Login
 {% endblock %}
 {% block form %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
 <form action="{% url 'login' %}" method="POST">
     {% csrf_token %}
     <div id="text1">Log In</div><br>
@@ -19,7 +20,7 @@
 
         {{ form.password }}<br>
 
-    <div style="width: 39px; height: 39px; left: 301px; top: 714px; position: absolute">
+    <div style="width: 39px; height: 39px; left: 20vw; top: 85vh; position: absolute">
         <label id="" ></label>
         <input type="checkbox" id="tickbox4">
     </div>

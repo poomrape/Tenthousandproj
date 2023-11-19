@@ -9,6 +9,9 @@ function goto_userinfomationpage (){
 function goto_logoutpage (){
     window.location.href = "users/logout"
 }
+function goto_maps(){
+    window.location.href = "/maps"
+}
 
 function toggleDropdown() {
     var dropdown = document.getElementById("myDropdown");

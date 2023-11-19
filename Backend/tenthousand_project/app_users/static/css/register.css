@@ -7,14 +7,14 @@ input[name="password2"]{
     background: #FAFAFF;
     position: absolute;
     border: 0.4vh #161A2A solid;
-    top: 22.9vh;
+    top: 62.9vh;
     border-radius: 1vh;
     width: 38vw;
     height: 7.5vh;
 }
 #textqoute {
-    left: 15.5vw; 
-    top: 71vh;
+    left: 20.5%; 
+    top: 72.5vh;
     position: absolute; 
     color: #161A2A; 
     font-size: 20px; 
@@ -23,18 +23,18 @@ input[name="password2"]{
     word-wrap: break-word
 }
 #tickboxreg{
-    width: 4vw; 
-    height: 4vh; 
-    left: -9.9vw; 
-    top: -14.5vh; 
-    position: absolute; 
-    background: #FAFAFF; 
-    border-radius: 8px; 
+    width: 4vw;
+    height: 4vh;
+    left: -10.5vw;
+    top: -12.8vh;
+    position: absolute;
+    background: #FAFAFF;
+    border-radius: 8px;
     border: 3px #161A2A solid
 }
 #textsign{
-    left: 44.5vw; 
-    top: 71vh; 
+    left: 45.5vw; 
+    top: 72.5vh; 
     position: absolute; 
     text-align: right; 
     color: #161A2A; 
@@ -44,8 +44,8 @@ input[name="password2"]{
     word-wrap: break-word
 }
 #Re_Password_text{
-    left: 13vw;
-    top: 58.5vh; 
+    left: 20%;
+    top: 58.5%; 
     position: absolute; 
     color: #161A2A; 
     font-size: 3vh; 
@@ -53,3 +53,26 @@ input[name="password2"]{
     font-weight: 400; 
     word-wrap: break-word
 }
+#Re_Password_text img{
+    position: absolute;
+    width: 1.5vw;
+    top: 8%;
+    left: -17%;
+}
+.buttoncon1{
+    width: 311px; 
+    height: 103px;
+    margin-left: 24vw;
+    /* left: 74%; */
+    top: 350%;
+    position: absolute;
+    background: #050505; 
+    border-radius: 15px;
+    font-size: 36px; 
+    color: #FAFAFF;
+    font-family: Kanit; 
+    font-weight: 600; }
+.buttoncon1:hover{background-color: #000000;}
+.buttoncon1:active{background-color: #404341;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);}
