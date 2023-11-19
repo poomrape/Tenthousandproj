@@ -52,13 +52,4 @@ def delete_expense(request, expense_id):
 
 
 
-    # if request.method == 'POST':
-    #     form = ExpenseForm(request.POST)
-    #     if form.is_valid():
-    #         expense = form.save(commit=False)
-    #         expense.user = request.user
-    #         expense.save()
-    #         return redirect('expense_list')
-    # else:
-    #     form = ExpenseForm()
-    # return render(request, 'add_expense.html', {'form': form})
+

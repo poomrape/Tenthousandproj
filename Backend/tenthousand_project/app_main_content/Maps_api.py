@@ -4,7 +4,7 @@ import googlemaps
 class ShopFinder:
     def __init__(self, api_key):
         self.api = googlemaps.Client(key=api_key)
-    
+
     def get_user_location(self):
         try:
             user_location = self.api.geolocate()
@@ -15,6 +15,9 @@ class ShopFinder:
     
     def find_shop_nearby(self, location, radius, keyword='cafe'):
         try:
+            geocode_result = self.api.geocode(location)
+            if geocode_result:
+                location = [geocode_result[0]['geometry']['location']['lat'], geocode_result[0]['geometry']['location']['lng']]
             places = self.api.places_nearby(location=location, radius=radius, keyword=keyword)
             return places['results']
         except Exception as e:
