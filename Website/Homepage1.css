@@ -27,8 +27,7 @@ body {
 #faderimage1{
     width: 50vw; 
     height: 600px; 
-    left: 0px; 
-    top: 0px; 
+    right:0%; 
     position: relative; 
     background-size: cover;
     background: linear-gradient(90deg, #161A2A 0%, rgba(22.40, 25.54, 42.06, 0.66) 10%, rgba(22.40, 25.54, 42.06, 0) 100%)
