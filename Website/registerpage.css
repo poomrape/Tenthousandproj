@@ -75,14 +75,6 @@ body{
     font-weight: 400; 
     word-wrap: break-word
 }
-#tickbox1{
-    width: 18px; 
-    height: 21px; 
-    left: 0px; 
-    top: 5px; 
-    position: absolute; 
-    background: #161A2A
-}
 #input2{
     width: 598px; 
     height: 80px; 
@@ -101,14 +93,6 @@ body{
     font-family: kanit; 
     font-weight: 400; 
     word-wrap: break-word
-}
-#tickbox2{
-    width: 18px; 
-    height: 21px; 
-    left: 0px; 
-    top: 5px; 
-    position: absolute; 
-    background: #161A2A
 }
 #text3{
     left:25px;
@@ -135,14 +119,6 @@ body{
 .buttoncon1:active{background-color: #404341;
         box-shadow: 0 5px #666;
         transform: translateY(4px);}
-#tickbox3{
-    width: 16px; 
-    height: 21px; 
-    left: 4px; 
-    top: 1px; 
-    position: absolute; 
-    background: #161A2A
-}
 #tickbox4{
     width: 39px; 
     height: 39px; 
@@ -204,8 +180,8 @@ input[type=text] {
     box-sizing: border-box;
     border: 1px solid #555;
     outline: none;
-  }
+}
   
   input[type=text]:focus {
     background-color: lightblue;
-  }
+}
