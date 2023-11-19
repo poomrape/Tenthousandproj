@@ -1,7 +1,6 @@
 from django.contrib.auth.forms import UserCreationForm
 from .models import Expense
 from django import forms
-from datetime import date
 
 class RegisterForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
