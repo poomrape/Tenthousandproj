@@ -1,12 +1,12 @@
 body{
     margin: 0;
-    width: 100vw; 
-    height: 100vh; 
+    width: 100%; 
+    height: 100%; 
     position: relative; 
     background: #1ED760
 }
 #map{
-    width: 1570px; 
+    width:960px; 
     height: 1080px; 
     left: 0px; 
     top: 0px
@@ -62,7 +62,10 @@ body{
     position: absolute; 
     background: #FAFAFF; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-    border-radius: 13px
+    border-radius: 13px;
+    font-size: 48px; 
+    font-family: Kanit; 
+    font-weight: 600;
 }
 #textbutton2{
     width: 114px; 
@@ -153,12 +156,52 @@ body{
     border: 2px #FAFAFF solid
 }
 #backbutton{
-    width: 14px; 
-    height: 29px; 
+    width: 27px; 
+    height:35px; 
     left: 895px; 
     top: 35px; 
     position: absolute; 
-    background: #FAFAFF; 
-    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25); 
-    border: 10px #FAFAFF solid
+    /* box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);  */
+    /* border: 10px #FAFAFF solid */
 }
+.buttoncon1{
+    width: 700px; 
+    height: 130px; 
+    left: 0px; 
+    top: 20px; 
+    position: relative; 
+    background: #16192a; 
+    border-radius: 45px;
+    font-size: 48px; 
+    color: #FAFAFF;
+    font-family: 'kanit';
+    font-weight: 600; }
+
+.buttoncon1:hover{background-color: #9fa8a2;}
+.buttoncon1:active{background-color: #000000;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);}
+input[type=text] {
+    width: 100%;
+    padding: 6px 6px;
+    margin: 8px 0;
+    font-size: 30px;
+box-sizing: border-box;
+}
+.buttoncon2{
+    width: 311px; 
+    height: 103px; 
+    left: 0px; 
+    top: 0px; 
+    position: relative; 
+    background: #16192a; 
+    border-radius: 45px;
+    font-size: 48px; 
+    color: #14922d;
+    font-family: 'kanit';
+    
+    font-weight: 600; }
+.buttoncon2:hover{background-color: #9fa8a2;}
+.buttoncon2:active{background-color: #3d3c3c;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);}
