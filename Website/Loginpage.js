@@ -4,5 +4,7 @@ function goto_loginpage (){
 
 // ...เมื่อกดปุ่ม NEXT
 function check_value(){
-
+    var username= document.getElementById("Usernamebox").value;
+    var password= document.getElementById("Passwordbox").value;
+    alert('username='+username+' password='+password)
 }
