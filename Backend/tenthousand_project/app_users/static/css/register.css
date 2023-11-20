@@ -1,78 +1,176 @@
-input[name="password2"]{
-    font-size: 3vh;
+
+form {
+    max-width: 290px; /* ปรับตามต้องการ */
+    margin: 0 auto; /* ทำให้กรอบอยู่กึ่งกลางหน้าจอ */
+}
+#LoginPic1{
+    width: 60% ; 
+    height: 100%;
+    left: -7.7%; 
+    top: 0%; 
+    position: absolute; 
+}
+#HeadSignin{
+    left: 178px; 
+    top: 0px; 
+    position: absolute  ; 
+    text-align: center; 
+    color: #161A2A; 
+    font-size: 80px; 
+    font-family: Prompt; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+#SubSignin{
+    /* left: 110px;  */
+    top: 14vh; 
+    position: relative; 
+    text-align: center; 
+    align-items: center;
+    color: #161A2A; 
+    font-size: 36px; 
+    font-family: Prompt; 
+    font-weight: 300; 
+    word-wrap: break-word;
+    width: 20vw;
+}
+.formbox{
+    width: 600px; 
+    height: 70px; 
+    background: #FAFAFF;
+    position: absolute; 
+    justify-content: center; 
+    align-items: center; 
+    display: inline-flex ; 
+    border-radius: 10px; 
+    border: 3px #161A2A solid;  
+    width: 100%;
+    font-size: 30px;
     padding: 12px 20px;
     margin: 4px 0;
     box-sizing: border-box;
     outline: none;
-    background: #FAFAFF;
-    position: absolute;
-    border: 0.4vh #161A2A solid;
-    top: 62.9vh;
-    border-radius: 1vh;
-    width: 38vw;
-    height: 7.5vh;
 }
-#textqoute {
-    left: 20.5%; 
-    top: 72.5vh;
+#Usernamebox{
+    left: 0px; 
+    top: 29.5%; 
+}
+#Passwordbox{
+    left: 0px; 
+    top: 47.5%; 
+}
+#Passwordbox2{
+    left: 0px; 
+    top: 65.5%; 
+}
+.formtext{
+    position: absolute; 
+    font-size: 20px; 
+    font-family: Prompt
+}
+#Usertext{
+    left: 22px; 
+    top: 25%; 
+}
+#Passwordtext{
+    left: 22px; 
+    top: 43%;
+}
+#Passwordtext2{
+    left: 22px; 
+    top: 61%;
+}
+#Remembertext{
+    left: 0px; 
+    top: 75.5vh;
     position: absolute; 
     color: #161A2A; 
     font-size: 20px; 
     font-family: "Prompt"; 
-    font-weight: 300; 
-    word-wrap: break-word
+    font-weight: 300;
+    display: flex;
+    align-items: center;
 }
-#tickboxreg{
-    width: 4vw;
-    height: 4vh;
-    left: -10.5vw;
-    top: -12.8vh;
-    position: absolute;
-    background: #FAFAFF;
-    border-radius: 8px;
-    border: 3px #161A2A solid
-}
-#textsign{
-    left: 45.5vw; 
-    top: 72.5vh; 
+#Registertext{
+    left: 64%; 
+    top: 76.5vh;
     position: absolute; 
-    text-align: right; 
     color: #161A2A; 
-    font-size: 20px; 
+    align-items: center;
+    justify-content: center; /* จัดตำแหน่งแนวนอนอยู่กึ่งกลาง */
+    /* align-items: center; จัดตำแหน่งแนวตั้งอยู่กึ่งกลาง */
+    font-size: 17px; 
     font-family: Prompt; 
-    font-weight: 300; 
-    word-wrap: break-word
+    font-weight: 300;
 }
-#Re_Password_text{
-    left: 20%;
-    top: 58.5%; 
-    position: absolute; 
-    color: #161A2A; 
-    font-size: 3vh; 
-    font-family: "Prompt"; 
-    font-weight: 400; 
-    word-wrap: break-word
-}
-#Re_Password_text img{
+.Nextbox{
+    /* left: 10%; 
+    top: 72%; */
+    top: 10vh;
     position: absolute;
-    width: 1.5vw;
-    top: 8%;
-    left: -17%;
+    width: 500px; /* กว้างของสี่เหลี่ยม */
+    height: 100px; /* สูงของสี่เหลี่ยม */
+    border-radius:20px;
+    background-color: #000000; /* สีพื้นหลังของสี่เหลี่ยม */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.buttoncon1{
-    width: 311px; 
-    height: 103px;
-    margin-left: 24vw;
-    /* left: 74%; */
-    top: 350%;
-    position: absolute;
-    background: #050505; 
-    border-radius: 15px;
-    font-size: 36px; 
-    color: #FAFAFF;
-    font-family: Kanit; 
-    font-weight: 600; }
-.buttoncon1:hover{background-color: #000000;}
-.buttoncon1:active{background-color: #404341;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);}
+.Nextbox:hover{background-color: #000000;}
+.Nextbox:active{background-color: #404341;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#Nexttext{
+    font-size: 50px; 
+    font-family: Prompt;
+    text-align: center; 
+    background-color: #000000;
+    color: #ffffff;
+}
+input[type="password"]{
+    border: 0px;
+    width: 100%;
+    font-size: 30px;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+input[type="password2"]{
+    border: 0px;
+    width: 100%;
+    font-size: 30px;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+input[type=text] {
+    border: 0px;
+    width: 100%;
+    font-size: 30px;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+input[type=checkbox] {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 10px; 
+    border: 10px #161A2A solid
+}
+a {
+    color: inherit; /* ให้ลิงก์ใช้สีเดิมของข้อความ */
+    text-decoration: none; /* ลบขีดใต้ข้อความ */
+}
+.Textlink:hover{
+    /* color: #3D8D59; */
+    color: #1ED760;
+    text-decoration: underline;
+}
+.Textlink:active{
+    color: #3D8D59;
+    /* font-size: 30px; */
+}

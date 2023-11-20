@@ -7,27 +7,21 @@
 {% endblock %}
 {% block form %}
 <link rel="stylesheet" href="{% static 'css/login.css' %}">
+<div id="HeadSignin">Sign in</div>
+<div id="SubSignin">ลงชื่อเข้าใช้แล้วใช้งานเลย!</div>
 <form action="{% url 'login' %}" method="POST">
     {% csrf_token %}
-    <div id="text1">Log In</div><br>
-    <div id="text2">ลงชื่อเข้าใช้งานเลย!</div><br>
-    <label id="Username_text" for="Username"><img src="{% static 'app_users/Picusername.svg' %}" alt="รูปภาพ Username" width="25vw" height="25vh"> Username</label>
-    <!-- <input id="Username_block" type="text" name="Username"><br> -->
+    <label class="formtext" id="Usertext" for="Username"><img src="{% static 'app_users/Picusername.svg' %}" alt="รูปภาพ Username" width="24" height="24"> Username</label>
+    <input class="formbox" id="Usernamebox" type="text" name="Username">
+        <div class="formbox" id="Usernamebox"> {{ form.username }} </div>
+    <label class="formtext" id="Passwordtext"><img src="{% static 'app_users/Picpassword.svg' %}" alt="รูปภาพ Password" width="24" height="24"> Password</label>
+        <div class="formbox" id="Passwordbox"> {{ form.password }} </div>
+    <label id= "Remembertext"><input type="checkbox">&nbsp;&nbsp;Remember me</label>
+    <div id="Registertext"><a href="{% url 'register'%}"class="Textlink">Register</a></div>
 
-        {{ form.username }}<br>
 
-    <label id="Password_text" for="Password"><img src="{% static 'app_users/Picpassword.svg' %}" alt="รูปภาพ Username"> Password</label>
+    <div style="left: 10%;top: 72%;position: absolute;"><button onclick="goto_loginpage()" id="Nexttext" class="Nextbox" type="submit">NEXT</div>
+    
 
-        {{ form.password }}<br>
-
-    <div style="width: 39px; height: 39px; left: 20vw; top: 85vh; position: absolute">
-        <label id="" ></label>
-        <input type="checkbox" id="tickbox4">
-    </div>
-    <div id="text4" >Remember me</div>
-    <div id="text5" ><a href="{% url 'register'%}">Register</a></div><br>
-    <div style="width: 532px; height: 100px; left: 334px; top: 30vh; position: relative">
-        <button onclick="goto_loginpage()" class="buttoncon1" type="submit">NEXT</div>
-    </div>
 </form>
 {% endblock %}
