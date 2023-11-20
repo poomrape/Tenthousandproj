@@ -36,7 +36,7 @@ form {
 #HeadSignin{
     left: 178px; 
     top: 0px; 
-    position: absolute; 
+    position: absolute ; 
     text-align: center; 
     color: #161A2A; 
     font-size: 80px; 
@@ -45,10 +45,11 @@ form {
     word-wrap: break-word
 }
 #SubSignin{
-    left: 110px; 
+    /* left: 110px;  */
     top: 14%; 
-    position: absolute; 
+    position: relative; 
     text-align: center; 
+    align-items: center;
     color: #161A2A; 
     font-size: 36px; 
     font-family: Prompt; 
