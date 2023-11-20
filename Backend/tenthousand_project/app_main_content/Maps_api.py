@@ -45,28 +45,21 @@ class ShopFinder:
             destination_locate = f"{geo_locate_lat},{geo_locate_lng}"
             distance_info = self.get_distance_info(user_location, destination_locate)
 
-            if distance_info:
-                list.append({
-                'name' : name_place,
-                'location' : place_location,
-                'rating' : rate,
-                'type' : type_,
-                'rating_total' : rating_total,
-                'geo_locate_lat' : geo_locate_lat,
-                'geo_locate_lng' : geo_locate_lng,
-                'distance' : distance_info['rows'][0]['elements'][0]['distance']['text'],
-                'time' : distance_info['rows'][0]['elements'][0]['duration']['text']
-                })
-            if not distance_info:
-                list.append({
-                'name' : name_place,
-                'location' : place_location,
-                'rating' : rate,
-                'type' : type_,
-                'rating_total' : rating_total,
-                'geo_locate_lat' : geo_locate_lat,
-                'geo_locate_lng' : geo_locate_lng,
-                })
+            shop_data = {
+                'name': name_place,
+                'location': place_location,
+                'rating': rate,
+                'type': type_,
+                'rating_total': rating_total,
+                'geo_locate_lat': geo_locate_lat,
+                'geo_locate_lng': geo_locate_lng,
+            }
+
+            if distance_info and 'distance' in distance_info['rows'][0]['elements'][0]:
+                shop_data['distance'] = float(distance_info['rows'][0]['elements'][0]['distance']['text'].replace(' km', ''))
+                shop_data['time'] = distance_info['rows'][0]['elements'][0]['duration']['text']
+
+            list.append(shop_data)
 
         list.append({'total' : i+1})
         return list

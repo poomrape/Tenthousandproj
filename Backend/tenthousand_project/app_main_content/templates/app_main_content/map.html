@@ -1,9 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            document.getElementById("id_location").value = position.coords.latitude + "," + position.coords.longitude;
+        }
+    </script>
 </head>
 <body>
     <h1>ถ้าจะใช้ตำแหน่งปัจจุบันให้เว้นว่างไว้และถ้าจะใช้รัศมี 4 km ให้เว้นว่างไว้เหมือนกัน</h1>
@@ -11,6 +25,7 @@
         {% csrf_token %}
         {{ location_form.as_p }}
         {{ radius_form.as_p }}
+        <button type="button" onclick="getLocation()">Get Current Location</button>
         <button type="submit">Submit</button>
     </form>
     {% if error_message %}
@@ -18,6 +33,11 @@
     {% endif %}
     
     {% if shop_result %}
+        <div>
+            <p>เรียงลำดับตาม:
+                <a href="{% url 'maps' %}?sort_by=distance">ระยะทาง</a>
+            </p>
+        </div>
         {% for shop in shop_result %}
         <div style="background-color: gray;">
             <p>{{ shop.name }}</p>
@@ -27,13 +47,11 @@
             <p>{{ shop.rating }}</p>
             <p>{{ shop.geo_locate_lat }}</p>
             <p>{{ shop.geo_locate_lng }}</p>
-            <p>{{ shop.distance }}</p>
+            <p>{{ shop.distance }}km</p>
             <p>{{ shop.time }}</p>
         </div>
         <p>{{ shop.total }}</p>
         {% endfor %}
     {% endif %}
-
-    
 </body>
 </html>
