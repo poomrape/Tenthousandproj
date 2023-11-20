@@ -27,17 +27,19 @@
         {{ radius_form.as_p }}
         <button type="button" onclick="getLocation()">Get Current Location</button>
         <button type="submit">Submit</button>
+        <div class="label">
+            <label for="sortby"><b>Sort by:</b></label>
+            <select name="sort" id="sorttype" value={{sort}}>
+                <option value="distanceasc">lowest distance</option>
+                <option value="distancedsc">highest distance</option>
+            </select>
+        </div>
     </form>
     {% if error_message %}
         <p>{{ error_message }}</p>
     {% endif %}
     
     {% if shop_result %}
-        <div>
-            <p>เรียงลำดับตาม:
-                <a href="{% url 'maps' %}?sort_by=distance">ระยะทาง</a>
-            </p>
-        </div>
         {% for shop in shop_result %}
         <div style="background-color: gray;">
             <p>{{ shop.name }}</p>
@@ -47,7 +49,7 @@
             <p>{{ shop.rating }}</p>
             <p>{{ shop.geo_locate_lat }}</p>
             <p>{{ shop.geo_locate_lng }}</p>
-            <p>{{ shop.distance }}km</p>
+            <p>{{ shop.distance }} Km</p> 
             <p>{{ shop.time }}</p>
         </div>
         <p>{{ shop.total }}</p>

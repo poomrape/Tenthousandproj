@@ -14,7 +14,7 @@ def maps(request):
     if request.method == 'POST':
         location_form = LocationForm(request.POST)
         radius_form = RadiusForm(request.POST)
-
+        sort = request.POST.get('sort')
         if location_form.is_valid():
             location = location_form.cleaned_data['location']
             if not location:
@@ -30,7 +30,10 @@ def maps(request):
                 shop_info_list = shop_finder.print_shop_info(shops_nearby, location)
                 sort_by = request.GET.get('sort_by', 'distance')
                 if sort_by == 'distance':
-                    shop_info_list.sort(key=lambda x: x.get('distance', float('inf')))
+                    if sort == 'distanceasc':
+                        shop_info_list.sort(key=lambda x: x.get('distance', float('inf')))
+                    elif sort == 'distancedsc':
+                        shop_info_list.sort(key=lambda x: x.get('distance', float('inf')),reverse=True)
 
                 return render(request, 'app_main_content/map.html', context={'shop_result': shop_info_list, 'sort_by': sort_by})
             except Exception as e:
