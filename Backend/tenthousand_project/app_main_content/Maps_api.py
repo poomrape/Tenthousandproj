@@ -5,12 +5,11 @@ class ShopFinder:
     def __init__(self, api_key):
         self.api = googlemaps.Client(key=api_key)
 
-    def get_user_location(self, user_input_location=None):
+    def get_user_location(self, location):
         try:
-            if user_input_location:
-                return {'location': {'lat': user_input_location[0], 'lng': user_input_location[1]}}
-            else:
-                return self.api.geolocate()
+            geocode_result = self.api.geocode(location)
+            if geocode_result:
+                    return (geocode_result[0]['geometry']['location']['lat'], geocode_result[0]['geometry']['location']['lng'])
         except Exception as e:
             print(f"error getting user location: {str(e)}")
             return None
@@ -74,7 +73,7 @@ class ShopFinder:
 
             shop_info_list.append(shop_data)
 
-        shop_info_list.append({'total': i})
+        shop_info_list.append({'total': i+1})
         i += 1
         return shop_info_list
         

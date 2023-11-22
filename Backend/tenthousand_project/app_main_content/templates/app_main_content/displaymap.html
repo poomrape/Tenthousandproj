@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ten Thousand Project</title>
+    </head>
+    <link rel="stylesheet" href="{% static 'css/displaymap.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+    <script src="{% static 'js/displaymap.js' %}"></script>
+    <body>
+        <div style="width: 100vw;height: 100vh;">
+            <div style="width: 70vw;; height: 100vh; left: 0px; top: 0px; position: absolute">
+                <div id="map"></div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkV4sjxEUVITYYDtf3qVF-E-T0aLBNfro&callback=initMap"
+                async defer>
+                 </script>
+            </div>
+            <div style="width: 30%;height: 100%;right: 0%;top: 0%;background-color: #AAAAAA;position:fixed;">
+                <div style="width: 100% ;height: 12%;top: 0px;position:relative ;background-color: #ffffff;"class='container'>
+                    <a href="{% url 'home' %}">
+                        <img src="{% static 'img/PicBackblack.svg' %}" style="left: 5%;position: relative;" width="auto" height="48"alt="รูปภาพ Back">
+                    </a>
+                        <div style="right: -18vw; height: 51%;position: relative;"><button onclick="check_value()" id="Nexttext" class="Nextbox">
+                            <a href="{% url 'expense_list' %}" style="text-align: center; position: relative; top: 0.3vw;">
+                                <img src="{% static 'img/PicUserblack.svg' %}" width="24" height="40"alt="รูปภาพ profile">
+                            </a>
+                                <B>
+                                    {{ user.username }}
+                                </B>
+                        </div>
+                    
+                </div>
+                <div style="width: 100% ;height: 6%;top: 5px;position:relative ;background-color: #ffffff;"class='container'>
+                    <form method="post" action="{% url 'maps' %}">
+                        {% csrf_token %}
+                        <button type="submit" id="submit_button">
+                            <img src="{% static 'img/Picsorter.svg' %}" style="margin-left: 15%;margin-right: 10%;" width="auto" height="26px"alt="รูปภาพ Sorter">
+                        </button>
+                        <select name="sort" id="sorttype" value={{sort}}>
+                            <option value="distanceasc">lowest distance</option>
+                            <option value="distancedsc">highest distance</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div>
+                    <ul class="scrollable-box" id="SLB">
+                        {% if shop_result %}
+                            {% for shop in shop_result %}
+                                {% if shop.total %}
+                                    <p>จำนวนร้านทั้งหมด : {{ shop.total }}</p>
+                                {% endif %}
+                            {% endfor %}
+                            {% for shop in shop_result %}
+                                {% if shop.name %}
+                                    <li>
+                                        <div class="Shopbox">
+                                            <p>ชื่อร้านค้า : {{ shop.name }}</p>
+                                            <p>ตำแหน่ง : {{ shop.location }}</p>
+                                            <p>Rating : {{ shop.rating }}</p>
+                                            <p>Rating Total : {{ shop.rating_total }}</p>
+                                            <p>{{ shop.geo_locate_lat }}</p>
+                                            <p>{{ shop.geo_locate_lng }}</p>
+                                            <p>ระยะทาง : {{ shop.distance }} km</p> 
+                                            <p>ระยะเวลาที่ใช้ในการเดินทาง (รถยนต์) : {{ shop.time }}</p>
+                                            <p>{{ start }}</p>
+                                            <button class="showRouteButton" data-lat="{{ shop.geo_locate_lat }}" data-lng="{{ shop.geo_locate_lng }}" data-end="{{ start }}">Navigator</button>
+                                        </div>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
