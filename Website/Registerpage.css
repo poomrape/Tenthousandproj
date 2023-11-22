@@ -35,18 +35,18 @@ form {
 }
 #HeadSignin{
     left: 178px; 
-    top: 0px; 
-    position: absolute  ; 
+    top: 40px; 
+    position: absolute ; 
     text-align: center; 
     color: #161A2A; 
     font-size: 80px; 
     font-family: Prompt; 
-    font-weight: 400; 
+    font-weight: 650; 
     word-wrap: break-word
 }
 #SubSignin{
     /* left: 110px;  */
-    top: 14%; 
+    top: 15%; 
     position: relative; 
     text-align: center; 
     align-items: center;
