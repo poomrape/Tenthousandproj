@@ -6,7 +6,7 @@ body{
     background: #1ED760
 }
 #map{
-    width: 960px; 
+    width:960px; 
     height: 1080px; 
     left: 0px; 
     top: 0px
@@ -114,14 +114,14 @@ body{
 }
 #head1{
     width: 755px; 
-    left: 102px; 
-    top: 174px; 
+    left: 112px; 
+    top: 194px; 
     position: absolute; 
     text-align: center; 
     color: #FAFAFF; 
-    font-size: 64px; 
+    font-size: 62px; 
     font-family: Kanit; 
-    font-weight: 500; 
+    font-weight: 550; 
     word-wrap: break-word
 }
 #headbar{
@@ -133,7 +133,7 @@ body{
     box-shadow: 0px 9px 7px rgba(0, 0, 0, 0.25)
 }
 #Bgheadbar{
-    width: 100%; 
+    width: 960px; 
     height: 100px; 
     left: 0px; 
     top: 0px; 
@@ -177,13 +177,40 @@ body{
     font-size: 48px; 
     color: #FAFAFF;
     font-family: 'kanit';
-    font-weight: 600; 
-}
+    font-weight: 600; }
 
 .buttoncon1:hover{background-color: #9fa8a2;}
 .buttoncon1:active{background-color: #000000;
         box-shadow: 0 5px #666;
         transform: translateY(4px);}
+input[type=text] {
+    width: 100%;
+    padding: 6px 6px;
+    margin: 8px 0;
+    font-size: 30px;
+box-sizing: border-box;
+}
+.buttoncon2{
+    width: 311px; 
+    height: 103px; 
+    left: 0px; 
+    top: 0px; 
+    position: relative; 
+    background: #16192a; 
+    border-radius: 45px;
+    font-size: 48px; 
+    color: #14922d;
+    font-family: 'kanit';
+    
+    font-weight: 600; }
+.buttoncon2:hover{background-color: #9fa8a2;}
+.buttoncon2:active{background-color: #3d3c3c;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);}
+
+
+
+        
 input[type=text] {
     position: absolute;
     background-color: #16192a;
@@ -220,20 +247,3 @@ input[id=id_radius]{
     background: #E3E3E3;
     border-radius: 13px;
 }
-.buttoncon2{
-    width: 311px; 
-    height: 103px; 
-    left: 0px; 
-    top: 0px; 
-    position: relative; 
-    background: #16192a; 
-    border-radius: 45px;
-    font-size: 48px; 
-    color: #14922d;
-    font-family: 'kanit';
-    
-    font-weight: 600; }
-.buttoncon2:hover{background-color: #9fa8a2;}
-.buttoncon2:active{background-color: #3d3c3c;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);}
