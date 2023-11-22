@@ -50,3 +50,33 @@ body{
     background-color: #AAAA;
     position: relative;
 }
+select{
+    width: 160px;
+    height: 42px;
+    border-radius: 5px;
+    text-align-last: center;
+    font-family: 'Prompt';
+    font-size: 24px;
+}
+.scrollable-box {
+    /* overflow: auto; ตั้งค่า overflow เพื่อให้เกิดการเลื่อน */
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    overflow-y:scroll; เพื่อให้มีแถบเลื่อนทั้งแนวตั้ง
+    overflow-x: hidden; ปิดการแสดงแถบเลื่อนในแนวนอน
+
+}
+#SLB{
+    width: 100%;
+    height: 300px;
+    height: auto;
+    background-color:none;
+}
+.Shopbox{   
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    justify-content: flex-start; /* ชิดซ้ายของ Flex Container ในแนวนอน */
+}
