@@ -35,18 +35,18 @@ form {
 }
 #HeadSignin{
     left: 178px; 
-    top: 0px; 
+    top: 40px; 
     position: absolute ; 
     text-align: center; 
     color: #161A2A; 
     font-size: 80px; 
     font-family: Prompt; 
-    font-weight: 400; 
+    font-weight: 650; 
     word-wrap: break-word
 }
 #SubSignin{
     /* left: 110px;  */
-    top: 14%; 
+    top: 15%; 
     position: relative; 
     text-align: center; 
     align-items: center;
@@ -167,4 +167,13 @@ a {
 .Textlink:active{
     color: #3D8D59;
     /* font-size: 30px; */
+}
+input[type=password] {
+    width: 100%;
+    font-size: 30px;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
 }

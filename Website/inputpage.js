@@ -1,10 +1,11 @@
 var lat;
 var pos;
-    function initMap() {
+async function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 13.736694 , lng:100.531658},
         zoom: 14
         });
+        
     }
 function goto_homepage(){
     window.location.href = "Homepage.html";
@@ -47,4 +48,25 @@ function click_display(){
       });
       map.fitBounds(antennasCircle.getBounds());
       
+}
+function click_otherlocation(){
+    document.getElementById("buttoncon2").style.color = "green";
+    document.getElementById("buttoncon1").style.backgroundColor = "#FAFAFA";
+    var  marker = new google.maps.Marker({
+        position: new google.maps.LatLng( 13.736694, 100.531658),
+        map: map,
+        title: 'ตำแหน่งที่คุณเลือก',
+        draggable: true,
+    }); 
+     google.maps.event.addListener(marker, 'dragend', function(){
+        console.log(marker.getPosition().lat());
+        console.log(marker.getPosition().lng());
+        pos = {
+            lat: marker.getPosition().lat(),
+            lng: marker.getPosition().lng(),
+            }; 
+        // pos.lat=marker.getPosition().lat();
+        // pos.lng=marker.getPosition().lng();
+        map.setCenter(pos);
+    }); 
 }

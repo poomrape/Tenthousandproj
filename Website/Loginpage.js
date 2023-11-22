@@ -1,4 +1,4 @@
-function goto_loginpage (){
+function goto_loginpage(){
     window.location.href = "หน้า login.html";
 }
 
@@ -6,5 +6,6 @@ function goto_loginpage (){
 function check_value(){
     var username= document.getElementById("Usernamebox").value;
     var password= document.getElementById("Passwordbox").value;
-    alert('username='+username+' password='+password)
+    alert('username='+username+' password='+password);
+    window.location.href = "Homepage2.html"
 }

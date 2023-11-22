@@ -1,0 +1,52 @@
+body{
+    width: 100vw; 
+    height: 100vh; 
+    position: relative; 
+    background: #C9C9C9;
+    margin: 0px;
+    font-family: 'Prompt';
+}
+.container {
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+     /* จัดให้อยู่ตรงกลางแนวดิ่ง */
+    /* gap: 10px; ระยะห่างระหว่าง element */
+}
+.Nextbox{
+    position: absolute;
+    width: 160px; /* กว้างของสี่เหลี่ยม */
+    height: 50px; /* สูงของสี่เหลี่ยม */
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.25);
+}
+.Nextbox:hover{background-color: #b5b5b5;}
+.Nextbox:active{background-color: #404341;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#Nexttext{
+    font-size: 32px; 
+    font-family: Prompt;
+    text-align: center; 
+    background-color: #ffffff;
+    color: #161A2A;
+}
+#backgroundmap{
+    width: 1400px; 
+    height: 1080px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    justify-content: center; 
+    align-items: center; 
+    display: inline-flex
+}
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #AAAA;
+    position: relative;
+}

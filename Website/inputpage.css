@@ -114,14 +114,14 @@ body{
 }
 #head1{
     width: 755px; 
-    left: 102px; 
-    top: 174px; 
+    left: 112px; 
+    top: 194px; 
     position: absolute; 
     text-align: center; 
     color: #FAFAFF; 
-    font-size: 64px; 
+    font-size: 62px; 
     font-family: Kanit; 
-    font-weight: 500; 
+    font-weight: 550; 
     word-wrap: break-word
 }
 #headbar{
