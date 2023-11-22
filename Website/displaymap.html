@@ -4,6 +4,7 @@
         <title>Ten Thousand Project</title>
     </head>
     <link rel="stylesheet" href="displaymap.css">
+    <script src="displaymap.js"></script>
     <body>
         <!-- <div style="width: 960px;; height: 1080px; left: 0px; top: 0px; position: absolute">
             <div id="map"></div>
@@ -11,7 +12,12 @@
             async defer></script>
         </div> -->
         <div style="width: 100vw;height: 100vh;">
-            <div></div>
+            <div style="width: 70vw;; height: 100vh; left: 0px; top: 0px; position: absolute">
+                <div id="map"></div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkV4sjxEUVITYYDtf3qVF-E-T0aLBNfro&callback=initMap"
+                async defer>
+                 </script>
+            </div>
             <!-- แถบด้านขวา -->
             <div style="width: 30%;height: 100%;right: 0%;top: 0%;background-color: #AAAAAA;position:fixed;">
                 <!-- หัวแถบ -->

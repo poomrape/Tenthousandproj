@@ -80,3 +80,9 @@ select{
     border-radius: 10px;
     justify-content: flex-start; /* ชิดซ้ายของ Flex Container ในแนวนอน */
 }
+#map{
+    width:70vw; 
+    height: 100vh; 
+    left: 0px; 
+    top: 0px
+}
