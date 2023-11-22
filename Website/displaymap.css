@@ -62,8 +62,8 @@ select{
     /* overflow: auto; ตั้งค่า overflow เพื่อให้เกิดการเลื่อน */
     /* border: 1px solid #ccc; */
     padding: 10px;
-    overflow-y:scroll; เพื่อให้มีแถบเลื่อนทั้งแนวตั้ง
-    overflow-x: hidden; ปิดการแสดงแถบเลื่อนในแนวนอน
+    overflow-y:scroll; 
+    overflow-x: hidden; 
 
 }
 #SLB{
