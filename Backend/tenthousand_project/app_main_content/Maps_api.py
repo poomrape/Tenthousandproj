@@ -65,16 +65,15 @@ class ShopFinder:
         return list
         
 
-
-# shop_finder = ShopFinder(api_key)
-    
-# user_location = shop_finder.get_user_location()
-    
-# if user_location:
-#     if user_location['accuracy'] > 4000:
-#         location = input("กรอกที่อยู่: ")
-#     else:
-#         location = f"{user_location['location']['lat']},{user_location['location']['lng']}"
-#     shops_nearby = shop_finder.find_shop_nearby(location)
-#     x = shop_finder.print_shop_info(shops_nearby, location)
-        
+# example list
+#     shop_data = {
+#                 'name': ไก่,
+#                 'location': จุฬาซอย10,
+#                 'rating': 5,
+#                 'type': cafe,
+#                 'rating_total': 2000,
+#                 'geo_locate_lat': 13.000123,
+#                 'geo_locate_lng': 15.000023,
+#                  'distance' : 17
+#                  'time' : 20
+#             }
