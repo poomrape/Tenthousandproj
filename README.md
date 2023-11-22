@@ -15,11 +15,25 @@
 อัลกอริทึมที่คำนวณจำนวนเงินคงเหลือพร้อมทั้งประวัติการใช้งาน
 
 ## Backend
-If you can't run you need to install Django, mysql. Run:
+If you can't run you need to install Django and mysql. For Django, run:
+```bash
+pip install django
 ```
-pip install Django
+
+For MySQL, download MySQL and MySQL Workspace from the official website: 
+https://dev.mysql.com/downloads/mysql/
+https://dev.mysql.com/downloads/workbench/
+
+Once that's done, run:
+```bash
+pip install mysql
+pip install mysql-connector-python
 ```
 
 Then create setting.py in "Backend\tenthousand_project\tenthousand_project\settings.py" 
 and api.py in "Backend\tenthousand_project\app_main_content\api.py"
 
+Finally, to properly start the server, run the manage.py file in "Backend\tenthousand_project\":
+```bash
+python manage.py runserver
+```
