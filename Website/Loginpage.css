@@ -168,3 +168,12 @@ a {
     color: #3D8D59;
     /* font-size: 30px; */
 }
+input[type=password] {
+    width: 100%;
+    font-size: 30px;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
