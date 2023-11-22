@@ -70,7 +70,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
     <script src="{% static 'js/inputpage.js' %}"></script>
     <body>
-        <div style="width: 960px;; height: 100%; left: 960px; top: 0px; position: absolute">
+        <div style="width: 960px;; height: 1080px; left: 960px; top: 0px; position: absolute">
             <div id="map"></div>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkV4sjxEUVITYYDtf3qVF-E-T0aLBNfro&callback=initMap"
             async defer></script>
@@ -87,11 +87,11 @@
         </div>
         <div style="width: 311px; height: 103px; left: 497px; top: 837px; position: absolute">
 
-            <button type="submit" id="button2" class="buttoncon2" >ต่อไป</div>
+            <button onclick="click_display()" type="submit" id="button2" class="buttoncon2" >ต่อไป</div>
             <!-- <div id="textbutton2" >ต่อไป</div> -->
         </div>
         <div style="width: 311px; height: 103px; left: 154px; top: 837px; position: absolute">      
-                    {{ radius_form.radius }}            
+                    {{ radius_form.radius }} 
         </div>
         </form>
             <div id="head1" >เลือกวิธีระบุตำแหน่งของคุณ</div>
