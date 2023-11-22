@@ -1,176 +1,145 @@
-body{
-    width: 100%; 
-    height: 100%; 
-    position: relative; 
-    background: linear-gradient(90deg, #1ED760 0%, #3D8D59 51%)
+body {
+    background: linear-gradient(90deg, #1ED760 0%, #3D8D59 51%); /* กำหนดไล่เฉดสี */
+    width: 100vw;
+    height: 100vh; /* กำหนดความสูงของหน้าเว็บเต็มหน้าจอ */
+    margin: 0; /* ลบ margin ที่ถูกกำหนดมาตั้งแต่แรก */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px; /* ปรับตามต้องการ */
+    max-height: 1000px;  /*กำหนดความสูงของหน้าเว็บ */
+    font-family: 'Prompt';
 }
-#image1{
-    width: 1163px; 
-    height: 1080px; 
-    left: 0px; 
-    top: 0px; 
-    position: absolute; 
-    box-shadow: 0px 24px 41px rgba(0, 0, 0, 0.25)
+form {
+    max-width: 290px; /* ปรับตามต้องการ */
+    margin: 0 auto; /* ทำให้กรอบอยู่กึ่งกลางหน้าจอ */
 }
-#background1{
-    width: 1163px; 
-    height: 1080px; 
-    left: 0px; 
-    top: 0px; 
+#LoginPic1{
+    width: 60% ; 
+    height: 100%;
+    left: -7.7%; 
+    top: 0%; 
     position: absolute; 
+}
+#LoginRMbox1{
+    width: 1000px;
+    height: 845px;
+    right: 0%; 
+    top: 0px; 
+    position: absolute;
     background: #FAFAFF;
     border-top-left-radius: 50px;
-    border-top-right-radius: 50px
+    border-bottom-left-radius: 50px;
+    box-shadow: -14px 0px 26px rgba(0, 0, 0, 0.25)
 }
-#head1{
-    left: 167px; 
+#HeadSignin{
+    left: 178px; 
     top: 0px; 
-    position: absolute; 
+    position: absolute  ; 
     text-align: center; 
     color: #161A2A; 
     font-size: 80px; 
-    font-family: Kanit; 
+    font-family: Prompt; 
     font-weight: 400; 
-    word-wrap: break-word"
+    word-wrap: break-word
 }
-#text1{
-    left: 147px; 
-    top: 139px; 
-    position: absolute; 
+#SubSignin{
+    /* left: 110px;  */
+    top: 14%; 
+    position: relative; 
     text-align: center; 
+    align-items: center;
     color: #161A2A; 
     font-size: 36px; 
     font-family: Prompt; 
     font-weight: 300; 
-    word-wrap: break-word"
+    word-wrap: break-word
 }
-#input1{
-    width: 598px; 
-    height: 80px; 
-    left: 0px; 
-    top: 50px; 
+.formbox{
+    width: 600px; 
+    height: 70px; 
+    background: #FAFAFF;
     position: absolute; 
-    background: #FAFAFF; 
+    justify-content: center; 
+    align-items: center; 
+    display: inline-flex ; 
     border-radius: 10px; 
-    border: 3px #161A2A solid
+    border: 3px #161A2A solid;  
+    width: 100%;
+    font-size: 30px;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    outline: none;
 }
-#input2{
-    width: 598px; 
-    height: 80px; 
+#Usernamebox{
     left: 0px; 
-    top: 200px; 
-    font-size: 40;
-    position: absolute; 
-    background: #FAFAFF; 
-    border-radius: 10px; 
-    border: 3px #161A2A solid
+    top:  29.5%; 
 }
-#text2{
-    left: 25px; 
-    top: 0px; 
+#Passwordbox{
+    left: 0px; 
+    top: 47.5%; 
+}
+.formtext{
+    position: absolute; 
+    font-size: 20px; 
+    font-family: Prompt
+}
+#Usertext{
+    left: 22px; 
+    top: 25%; 
+}
+#Passwordtext{
+    left: 22px; 
+    top: 43%;
+}
+#Remembertext{
+    left: 0px; 
+    top: 62%;
     position: absolute; 
     color: #161A2A; 
     font-size: 20px; 
-    font-family: Prompt; 
-    font-weight: 400; 
-    word-wrap: break-word
+    font-family: "Prompt"; 
+    font-weight: 300;
+    display: flex;
+    align-items: center;
 }
-#input2{
-    width: 598px; 
-    height: 80px; 
-    left: 0px; 
-    top: -50    px; 
-    position: absolute; 
-    background: #FAFAFF; 
-    border-radius: 10px; 
-    border: 3px #161A2A solid
-}
-#text2{
-    margin: 20px,20px,20px,20px;
+#Registertext{
+    left: 64%; 
+    top: 62.8%;
     position: absolute; 
     color: #161A2A; 
-    font-size:40px; 
-    font-family: kanit; 
-    font-weight: 400; 
-    word-wrap: break-word
-}
-#text3{
-    left:25px;
-    top: 150px; 
-    position: absolute; 
-    color: #161A2A; 
-    font-size: 40px; 
-    font-family: kanit; 
-    font-weight: 400; 
-    word-wrap: break-word
-}
-.buttoncon1{
-    width: 311px; 
-    height: 103px;
-    left:105px;
-    position: absolute; 
-    background: #050505; 
-    border-radius: 15px;
-    font-size: 36px; 
-    color: #FAFAFF;
-    font-family: Kanit; 
-    font-weight: 600; }
-.buttoncon1:hover{background-color: #000000;}
-.buttoncon1:active{background-color: #404341;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);}
-#tickbox4{
-    width: 39px; 
-    height: 39px; 
-    left: 0px; 
-    top: 0px; 
-    position: absolute; 
-    background: #FAFAFF; 
-    border-radius: 8px; 
-    border: 3px #161A2A solid
-}
-#text4{
-    width: 216px; 
-    height: 39px; 
-    left: 352px; 
-    top: 714px; 
-    position: absolute; 
-    color: #161A2A; 
+    align-items: center;
+    justify-content: center; /* จัดตำแหน่งแนวนอนอยู่กึ่งกลาง */
+    /* align-items: center; จัดตำแหน่งแนวตั้งอยู่กึ่งกลาง */
     font-size: 20px; 
     font-family: Prompt; 
-    font-weight: 300; 
-    word-wrap: break-word
+    font-weight: 300;
 }
-#text5{
-    left: 652px; 
-    top: 718px; 
-    position: absolute; 
-    text-align: right; 
-    color: #161A2A; 
-    font-size: 20px; 
-    font-family: Prompt; 
-    font-weight: 300; 
-    word-wrap: break-word
+.Nextbox{
+    /* left: 10%; 
+    top: 72%; */
+    position: absolute;
+    width: 500px; /* กว้างของสี่เหลี่ยม */
+    height: 100px; /* สูงของสี่เหลี่ยม */
+    border-radius:20px;
+    background-color: #000000; /* สีพื้นหลังของสี่เหลี่ยม */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#button1{
-    width: 532px; 
-    height: 76px; 
-    left: 0px; 
-    top: 0px; 
-    position: absolute; 
-    background: #161A2A; 
-    border-radius: 13px
+.Nextbox:hover{background-color: #000000;}
+.Nextbox:active{background-color: #404341;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
-#textinbutton1{
-    left: 220px; 
-    top: 11px; 
-    position: absolute; 
+#Nexttext{
+    font-size: 50px; 
+    font-family: Prompt;
     text-align: center; 
-    color: #FAFAFF; 
-    font-size: 36px; 
-    font-family: Kanit; 
-    font-weight: 700; 
-    word-wrap: break-word
+    background-color: #000000;
+    color: #ffffff;
 }
 input[type=text] {
     width: 100%;
@@ -178,7 +147,6 @@ input[type=text] {
     padding: 12px 20px;
     margin: 4px 0;
     box-sizing: border-box;
-    border: 1px solid #555;
     outline: none;
 }
   

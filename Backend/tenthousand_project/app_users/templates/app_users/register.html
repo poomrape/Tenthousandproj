@@ -7,32 +7,28 @@
 {% block form %}
 <link rel="stylesheet" href="{% static 'css/register.css' %}">
 <form action="{% url 'register' %}" method="POST">
+    <div id="HeadSignin">Sign up</div>
+    <div id="SubSignin">สมัครง่ายๆ ไม่ยุ่งยาก</div>
     {% csrf_token %}
-    <div id="text1">Sign Up</div><br>
-    <div id="text2">สมัครง่ายๆไม่ยุ่งยาก</div><br>
-    <label id="Username_text" for="Username"><img src="{% static 'app_users/Picusername.svg' %}" alt="รูปภาพ Username" width="25vw" height="25vh"> Username</label>
-    <!-- <input id="Username_block" type="text" name="Username"><br> -->
-
-        {{ form.username }}<br>
-
-    <label id="Password_text" for="Password"><img src="{% static 'app_users/Picpassword.svg' %}" alt="รูปภาพ Username"> Password</label>
-
-        {{ form.password1 }}<br>
+    <label class="formtext" id="Usertext" for="username"><img src="{% static 'app_users/Picusername.svg' %}" alt="รูปภาพ Username" width="24" height="24"> Username</label>
+    <div class="formbox" id="Usernamebox">{{ form.username }}</div>
     
-        <label id="Re_Password_text" for="Password"><img src="{% static 'app_users/Picpassword.svg' %}" alt="รูปภาพ Username"> Re-Password</label>
+    <label class="formtext" id="Passwordtext" for="password"><img src="{% static 'app_users/Picpassword.svg' %}" alt="รูปภาพ Password" width="24" height="24"> Password</label>
+    <div class="formbox" id="Passwordbox"> {{ form.password1 }}</div>
 
-        {{ form.password2 }}<br>
+    <label class="formtext" id="Passwordtext2" for="password"><img src="{% static 'app_users/Picpassword.svg' %}" alt="รูปภาพ Password" width="24" height="24"> Re-Password</label>
+    <div class="formbox" id="Passwordbox2"> {{ form.password2 }}</div>
 
-    <!-- <div style="width: 39px; height: 39px; left: 301px; top: 714px; position: absolute">
-        <label id="" ></label>
-        <input type="checkbox" id="tickboxreg">
-    </div>
-    <div id="textqoute" >Term and agreement</div> -->
-    <div id="textsign" ><a href="{% url 'login' %}">Sign In</a></div><br>
-</div>
-    <div style="width: 532px; height: 100px; top: 30vh; position: relative">
-        <button onclick="goto_loginpage()" class="buttoncon1" type="submit">NEXT
-    </div>
+    <label id= "Remembertext"><input type="checkbox">&nbsp;&nbsp;Term and agreement</label>
+    <div id="Registertext"><a href="{% url 'login' %}"class="Textlink">Have an Account? Sign In</a></div>
+
+
+    <div style="left: 10%;top: 72%;position: absolute;"><button onclick="goto_loginpage()" id="Nexttext" class="Nextbox" type="submit">NEXT</div>
     
-</form>
+    <!-- <div style="width: 532px; height: 100px; left: 334px; top: 773px; position: absolute">
+      <button onclick="goto_loginpage()" class="buttoncon1" >NEXT</div> -->
+
+    <!-- <div id="Nextbox"><div id="Nexttext">NEXT</div> -->
+
+  </form>
 {% endblock %}

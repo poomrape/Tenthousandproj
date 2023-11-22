@@ -10,27 +10,35 @@ user_location = shop_finder.get_user_location()
 def maps(request):
     location_form = LocationForm()
     radius_form = RadiusForm()
+
     if request.method == 'POST':
         location_form = LocationForm(request.POST)
         radius_form = RadiusForm(request.POST)
+        sort = request.POST.get('sort')
         if location_form.is_valid():
             location = location_form.cleaned_data['location']
             if not location:
                 location = f"{user_location['location']['lat']},{user_location['location']['lng']}"
+
         if radius_form.is_valid():
             radius = radius_form.cleaned_data['radius']
             if not radius:
                 radius = 4000
 
-
             try:
                 shops_nearby = shop_finder.find_shop_nearby(location, radius)
                 shop_info_list = shop_finder.print_shop_info(shops_nearby, location)
-                return render(request, 'app_main_content/map.html', context={'shop_result': shop_info_list})
+                sort_by = request.GET.get('sort_by', 'distance')
+                if sort_by == 'distance':
+                    if sort == 'distanceasc':
+                        shop_info_list.sort(key=lambda x: x.get('distance', float('inf')))
+                    elif sort == 'distancedsc':
+                        shop_info_list.sort(key=lambda x: x.get('distance', float('inf')),reverse=True)
+
+                return render(request, 'app_main_content/map.html', context={'shop_result': shop_info_list, 'sort_by': sort_by})
             except Exception as e:
                 error_message = f"An error occurred: {str(e)}"
                 return render(request, 'app_main_content/map.html', context={'error_message': error_message})
-            
 
-    return render(request, 'app_main_content/map.html', context={'location_form': location_form, 'radius_form': radius_form}) 
+    return render(request, 'app_main_content/map.html', context={'location_form': location_form, 'radius_form': radius_form})
 

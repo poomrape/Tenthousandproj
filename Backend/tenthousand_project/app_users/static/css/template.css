@@ -1,158 +1,163 @@
 body {
-    margin: 0;
-    background: linear-gradient(90deg, #1ED760 0%, #3D8D59 51%);
+    background: linear-gradient(90deg, #1ED760 0%, #3D8D59 51%); /* กำหนดไล่เฉดสี */
+    width: 100vw;
+    height: 100vh; /* กำหนดความสูงของหน้าเว็บเต็มหน้าจอ */
+    margin: 0; /* ลบ margin ที่ถูกกำหนดมาตั้งแต่แรก */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px; /* ปรับตามต้องการ */
+    max-height: 1000px;  /*กำหนดความสูงของหน้าเว็บ */
+    font-family: 'Prompt';
     overflow: hidden;
 }
-
-
-input[type="text"]{
-    font-size: 3vh;
-    padding: 12px 20px;
-    margin: 4px 0;
-    box-sizing: border-box;
-    outline: none;
-    background: #FAFAFF;
-    position: absolute;
-    border: 0.4vh #161A2A solid;
-    top: 32.9vh;
-    border-radius: 1vh;
-    width: 38vw;
-    height: 7.5vh;
-    left: 17%;
+form {
+    max-width: 290px; /* ปรับตามต้องการ */
+    margin: 0 auto; /* ทำให้กรอบอยู่กึ่งกลางหน้าจอ */
 }
-input[type="password"]{
-    font-size: 3vh;
-    padding: 12px 20px;
-    margin: 4px 0;
-    box-sizing: border-box;
-    outline: none;
-    background: #FAFAFF;
-    position: absolute;
-    border: 0.4vh #161A2A solid;
-    top: 48.9vh;
-    border-radius: 1vh;
-    width: 38vw;
-    height: 7.5vh;
-    left: 17%
-}
-.background1 {
-    width: 110%; 
-    height: 103.2vh;
-    background-color: #FAFAFF;
-    box-shadow: -14px 0px 26px rgba(0, 0, 0, 0.25);
-    border-top-left-radius: 4vw;
-    border-bottom-left-radius: 4vw;
-}
-#text1 {
-    position: absolute;
-    left: 40%;
-    top: 5vh;
-    font-size: 8vh;
-    font-family: "Kanit";
-}
-#text2 {
-    position: absolute;
-
-    top: 20%;
-    left: 35%;
-    line-height: normal;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 4vh;
-    font-family: "Prompt";
-}
-#center {
-    text-align: center;
-}
-
-#image1 {
-    width: 60vw;
-    height: 105vh;
-    overflow: hidden;
-    top: -5vh;
-    left: -2vw;
-    position: absolute;
-}
-#Username_text{
-    left: 20%;
-    top: 28.5%; 
+#LoginPic1{
+    width: 60% ; 
+    height: 100%;
+    left: -7.7%; 
+    top: 0%; 
     position: absolute; 
+}
+#LoginRMbox1{
+    width: 58%;
+    height: 100%;
+    right: 0%; 
+    top: 0px; 
+    position: absolute;
+    background: #FAFAFF;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: -14px 0px 26px rgba(0, 0, 0, 0.25)
+}
+#HeadSignin{
+    left: 178px; 
+    top: 0px; 
+    position: absolute ; 
+    text-align: center; 
     color: #161A2A; 
-    font-size: 3vh; 
-    font-family: "Prompt"; 
+    font-size: 80px; 
+    font-family: Prompt; 
     font-weight: 400; 
     word-wrap: break-word
 }
-#Username_text img {
-    position: absolute;
-    width: 2vw;
-    top: 15%;
-    left: -22%;
-}
-
-
-#Password_text{
-    left: 20%;
-    top: 44.5%; 
-    position: absolute; 
+#SubSignin{
+    /* left: 110px;  */
+    top: 14%; 
+    position: relative; 
+    text-align: center; 
+    align-items: center;
     color: #161A2A; 
-    font-size: 3vh; 
-    font-family: "Prompt"; 
-    font-weight: 400; 
-    word-wrap: break-word
-}
-#Password_text img {
-    position: absolute;
-    width: 1.5vw;
-    top: 8%;
-    left: -24%;
-}
-#Password_block {
-    background: #FAFAFF;
-    position: absolute;
-    border: 0.4vh #161A2A solid;
-    top: 16.3vh;
-    border-radius: 1vh;
-    width: 38vw;
-    height: 7.5vh;
-}
-
-/* #checkbox{
-    position: relative;
-    top: 22vh;
-    left: -24%;
-} */
-
-#text4{
-    left: 14.2vw; 
-    top: 58vh; 
-    position: absolute; 
-    color: #161A2A; 
-    font-size: 20px; 
-    font-family: "Prompt"; 
-    font-weight: 300; 
-    word-wrap: break-word
-}
-#tickbox4{
-    width: 4vw; 
-    height: 4vh; 
-    left: -9.9vw; 
-    top: -27.5vh; 
-    position: absolute; 
-    background: #FAFAFF; 
-    border-radius: 8px; 
-    border: 3px #161A2A solid
-}
-
-
-#text5{
-    left: 44.5vw; 
-    top: 58vh; 
-    position: absolute; 
-    text-align: right; 
-    color: #161A2A; 
-    font-size: 20px; 
+    font-size: 36px; 
     font-family: Prompt; 
     font-weight: 300; 
     word-wrap: break-word
+}
+.formbox{
+    width: 600px; 
+    height: 70px; 
+    background: #FAFAFF;
+    position: absolute; 
+    justify-content: center; 
+    align-items: center; 
+    display: inline-flex ; 
+    border-radius: 10px; 
+    border: 3px #161A2A solid;  
+    width: 100%;
+    font-size: 30px;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+#Usernamebox{
+    left: 0px; 
+    top:  29.5%; 
+}
+#Passwordbox{
+    left: 0px; 
+    top: 47.5%; 
+}
+.formtext{
+    position: absolute; 
+    font-size: 20px; 
+    font-family: Prompt
+}
+#Usertext{
+    left: 22px; 
+    top: 25%; 
+}
+#Passwordtext{
+    left: 22px; 
+    top: 43%;
+}
+#Remembertext{
+    left: 0px; 
+    top: 62%;
+    position: absolute; 
+    color: #161A2A; 
+    font-size: 20px; 
+    font-family: "Prompt"; 
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+#Registertext{
+    left: 89%; 
+    top: 62.8%;
+    position: absolute; 
+    color: #161A2A; 
+    align-items: center;
+    justify-content: center; /* จัดตำแหน่งแนวนอนอยู่กึ่งกลาง */
+    /* align-items: center; จัดตำแหน่งแนวตั้งอยู่กึ่งกลาง */
+    font-size: 20px; 
+    font-family: Prompt; 
+    font-weight: 300;
+}
+.Nextbox{
+    /* left: 10%; 
+    top: 72%; */
+    position: absolute;
+    width: 500px; /* กว้างของสี่เหลี่ยม */
+    height: 100px; /* สูงของสี่เหลี่ยม */
+    border-radius:20px;
+    background-color: #000000; /* สีพื้นหลังของสี่เหลี่ยม */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Nextbox:hover{background-color: #000000;}
+.Nextbox:active{background-color: #404341;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#Nexttext{
+    font-size: 50px; 
+    font-family: Prompt;
+    text-align: center; 
+    background-color: #000000;
+    color: #ffffff;
+}
+input[type=checkbox] {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 10px; 
+    border: 10px #161A2A solid
+}
+a {
+    color: inherit; /* ให้ลิงก์ใช้สีเดิมของข้อความ */
+    text-decoration: none; /* ลบขีดใต้ข้อความ */
+}
+.Textlink:hover{
+    /* color: #3D8D59; */
+    color: #1ED760;
+    text-decoration: underline;
+}
+.Textlink:active{
+    color: #3D8D59;
+    /* font-size: 30px; */
 }

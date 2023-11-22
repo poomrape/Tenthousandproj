@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+</head>
+<link rel="stylesheet" href="Registerpage.css">
+<script src="Registerpage.js"></script>
+
+<body>
+
+  <div style="height: 100vh;width: 100vw;">
+    <img id="LoginPic1" src="PicL-Rmoney.png" />
+    <!--บล็อค Sign in ฝั่งขวา-->
+    <div id="LoginRMbox1">
+      <!-- Sing in ถึง กรอก password-->
+      <div style="width: 598px; height: 100vh; left: 20%; top: 5%; position: absolute">
+        <div id="HeadSignin">Sign up</div>
+        <div id="SubSignin">สมัครง่ายๆ ไม่ยุ่งยาก</div>
+        <form>
+
+          <label class="formtext" id="Usertext" for="username"><img src="Picusername.svg" alt="รูปภาพ Username" width="24" height="24"> Username</label>
+          <input class="formbox" id="Usernamebox" type="text" name="username">
+          
+          <label class="formtext" id="Passwordtext" for="password"><img src="Picpassword.svg" alt="รูปภาพ Password" width="24" height="24"> Password</label>
+          <input class="formbox" id="Passwordbox" type="text" name="password">
+
+          <label id= "Remembertext"><input type="checkbox">&nbsp;&nbsp;Term and agreement</label>
+          <div id="Registertext"><a href="Loginpage.html"class="Textlink">Have an Account? Sign In</a></div>
+
+
+          <div style="left: 10%;top: 72%;position: absolute;"><button onclick="get_value()" id="Nexttext" class="Nextbox">NEXT</div>
+          
+          <!-- <div style="width: 532px; height: 100px; left: 334px; top: 773px; position: absolute">
+            <button onclick="goto_loginpage()" class="buttoncon1" >NEXT</div> -->
+
+          <!-- <div id="Nextbox"><div id="Nexttext">NEXT</div> -->
+
+        </form>
+      </div>
+      <!-- ส่วนล่าง -->
+      
+    </div>
+  </div>
+</body>
+</html>
