@@ -11,8 +11,6 @@ function goto_homepage(){
     window.location.href = "Homepage.html";
 }
 function click_mylocation(){
-    // document.getElementById("buttoncon1").style.color = "green";
-    // document.getElementById("buttoncon2").style.backgroundColor = "#FAFAFA";
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
         pos = {
@@ -24,19 +22,9 @@ function click_mylocation(){
             position: new google.maps.LatLng(pos.lat, pos.lng),
             map: map,
             title: 'ตำแหน่งของคุณ'
-         });
-         getLocation(); 
+         }); 
         },function() {
         handleLocationError(true, infoWindow, map.getCenter()); 
-        },function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-                alert("Geolocation is not supported by this browser.");
-            }
-        },
-        function showPosition(position) {
-            document.getElementById("id_location").value = position.coords.latitude + "," + position.coords.longitude;
         });
     }
   
@@ -81,3 +69,15 @@ function click_otherlocation(){
 
 
 
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+        console.log("pass")
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+function showPosition(position) {
+    console.log("pass")
+    document.getElementById("id_location").value = position.coords.latitude + "," + position.coords.longitude;
+};

@@ -78,7 +78,7 @@
         <form method="post" action="{% url 'maps' %}">
             {% csrf_token %}
         <div style="width: 700px; height: 150px; left: 130px; top: 344px; position: absolute; ">
-            <button onclick="click_mylocation()" id="buttoncon1" class="buttoncon1" type="button">ตำแหน่งปัจจุบัน</button>
+            <button onclick="click_mylocation(),getLocation()" id="buttoncon1" class="buttoncon1" type="button">ตำแหน่งปัจจุบัน</button>
         </div>
         <div  style="width: 700px; height: 150px; left: 130px; top: 585px; position: absolute">
 
