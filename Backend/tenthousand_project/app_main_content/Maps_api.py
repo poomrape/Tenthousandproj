@@ -1,25 +1,32 @@
 import googlemaps
-
+import time
 
 class ShopFinder:
     def __init__(self, api_key):
         self.api = googlemaps.Client(key=api_key)
 
-    def get_user_location(self):
+    def get_user_location(self, user_input_location=None):
         try:
-            user_location = self.api.geolocate()
-            return user_location
+            if user_input_location:
+                return {'location': {'lat': user_input_location[0], 'lng': user_input_location[1]}}
+            else:
+                return self.api.geolocate()
         except Exception as e:
             print(f"error getting user location: {str(e)}")
             return None
     
     def find_shop_nearby(self, location, radius, keyword='cafe'):
         try:
-            geocode_result = self.api.geocode(location)
-            if geocode_result:
-                location = [geocode_result[0]['geometry']['location']['lat'], geocode_result[0]['geometry']['location']['lng']]
-            places = self.api.places_nearby(location=location, radius=radius, keyword=keyword)
-            return places['results']
+            shops = []
+            next_page_token = None
+            while True:
+                places = self.api.places_nearby(location=location, radius=radius, keyword=keyword, page_token=next_page_token)
+                shops.extend(places['results'])
+                time.sleep(1.85)
+                next_page_token = places.get('next_page_token')
+                if next_page_token == None:
+                    break
+            return shops
         except Exception as e:
             print(f"error finding shop nearby: {str(e)}")
             return []
@@ -32,8 +39,14 @@ class ShopFinder:
             print(f"error getting distance information: {str(e)}")
             return None
     
+    def get_shop_info_list(self, location, radius, keyword='cafe'):
+        shops_nearby = self.find_shop_nearby(location, radius, keyword)
+        shop_info_list = self.print_shop_info(shops_nearby, location)
+        return shop_info_list
+
     def print_shop_info(self, result, user_location):
-        list = []
+        shop_info_list = []
+        i = 0
         for i, shop in enumerate(result):
             name_place = shop['name']
             place_location = shop['vicinity']
@@ -59,10 +72,11 @@ class ShopFinder:
                 shop_data['distance'] = float(distance_info['rows'][0]['elements'][0]['distance']['text'].replace(' km', ''))
                 shop_data['time'] = distance_info['rows'][0]['elements'][0]['duration']['text']
 
-            list.append(shop_data)
+            shop_info_list.append(shop_data)
 
-        list.append({'total' : i+1})
-        return list
+        shop_info_list.append({'total': i})
+        i += 1
+        return shop_info_list
         
 
 # example list
