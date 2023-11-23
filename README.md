@@ -26,7 +26,6 @@ https://dev.mysql.com/downloads/workbench/
 
 Once that's done, run:
 ```bash
-pip install mysql
 pip install mysql-connector-python
 ```
 
@@ -35,5 +34,19 @@ and api.py in "Backend\tenthousand_project\app_main_content\api.py"
 
 Finally, to properly start the server, run the manage.py file in "Backend\tenthousand_project\":
 ```bash
+python manage.py migrate
 python manage.py runserver
+```
+
+If there are any issues, try installing mysql-connector-python and django again in a virtual environment.
+```bash
+# Create a new virtual environment
+python -m venv env
+
+# On Unix or MacOS
+source env/bin/activate
+
+# Activate the virtual environment
+# On Windows
+env\Scripts\activate
 ```
