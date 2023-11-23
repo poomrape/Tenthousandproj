@@ -81,7 +81,7 @@ ul {
 #header1{
     width: 45vw;
     left: 95px;
-    top: 7vw;
+    top: 14vw;
     position: absolute;
     color: #FAFAFF;
     font-size: 5vw;
@@ -93,7 +93,7 @@ ul {
     width: 37vw;
     height: 0px;
     left: 95px;
-    top: 23vw;
+    top: 30vw;
     position: absolute;
     border: 6px #FAFAFF solid;
 }
@@ -108,14 +108,16 @@ ul {
     width: 311px;
     height: 103px;
     left: 95px;
-    top: 26vw;
+    top: 33vw;
     position: relative;
     background: #1ED760;
+    border: 0;
     border-radius: 15px;
     font-size: 36px;
     color: #FAFAFF;
     font-family: 'Prompt';
-    font-weight: 600;}
+    font-weight: 600;
+}
     .buttoncon1:hover{background-color: #1ED760;}
     .buttoncon1:active{background-color: #179f46;
             box-shadow: 0 5px #666;
@@ -142,12 +144,12 @@ ul {
     word-wrap: break-word;
 }
 #underline2{
-    width: 45vw;
+    width: 37vw;
     height: 0px;
-    left: 52%;
-    top: 25%;
+    left: 95px;
+    top: 30vw;
     position: absolute;
-    border: 6px #161A2A solid;
+    border: 6px #FAFAFF solid;
 }
 #text1{
     width: 45vw; 

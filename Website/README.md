@@ -1,2 +1,0 @@
-# Tenthousandproj
-My Group project
