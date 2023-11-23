@@ -18,7 +18,11 @@
     </div>
     <div class="sub_header">
         <ul class="head">
+            {% if user.is_authenticated %}
+            <li class="main_li"><a href="{% url 'home' %}">{{ user.username }}   |</a></li>
+            {% else %}
             <li class="main_li"><a href="{% url 'login' %}">{{ user.username }}   |</a></li>
+            {% endif %}
             <li class="main_li"><a href="{% url 'home' %}">หน้าแรก</a></li>
             <li class="main_li"><a href="{% url 'maps' %}">กำหนดตำแหน่ง</a></li>
             <li class= "main_li" id="logout"><a href="{% url 'logout' %}">Logout</a></li>

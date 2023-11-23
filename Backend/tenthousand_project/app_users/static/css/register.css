@@ -21,19 +21,21 @@ form {
     font-weight: 400; 
     word-wrap: break-word
 }
-#SubSignin{
-    /* left: 110px;  */
-    top: 14vh; 
-    position: relative; 
-    text-align: center; 
+
+#SubSignin {
+    left: -5vw;
+    top: 14vh;
+    position: relative;
+    /* text-align: center; */
     align-items: center;
-    color: #161A2A; 
-    font-size: 36px; 
-    font-family: Prompt; 
-    font-weight: 300; 
+    color: #161A2A;
+    font-size: 36px;
+    font-family: Prompt;
+    font-weight: 300;
     word-wrap: break-word;
-    width: 20vw;
+    width: 33vw;
 }
+
 .formbox{
     width: 600px; 
     height: 70px; 

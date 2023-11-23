@@ -10,6 +10,7 @@
     z-index: 1;
 }
 body {
+    overflow-x: hidden;
     background-color: #161A2A;
     font-family: "Kanit", sans-serif;
     max-width: 1500px; /* ปรับตามต้องการ */
@@ -130,23 +131,23 @@ ul {
 }
 #head2{
     width: 50vw;
-    left: 51%; 
-    top: 70px; 
-    position: absolute; 
-    text-align: center; 
-    color: #161A2A; 
-    font-size: 62px; 
+    left: 49%;
+    top: 70px;
+    position: absolute;
+    text-align: center;
+    color: #161A2A;
+    font-size: 62px;
     font-family: 'Prompt';
-    font-weight: 500; 
-    word-wrap: break-word
+    font-weight: 500;
+    word-wrap: break-word;
 }
 #underline2{
-    width: 600px; 
-    height: 0px; 
-    left: 55%; 
-    top: 25%; 
-    position: absolute; 
-    border: 6px #161A2A solid
+    width: 45vw;
+    height: 0px;
+    left: 52%;
+    top: 25%;
+    position: absolute;
+    border: 6px #161A2A solid;
 }
 #text1{
     width: 45vw; 
@@ -231,7 +232,7 @@ h2 {
 }
 #Nexttext{
     font-weight: 300;
-    font-size: 36px; 
+    font-size: 2vw;
     font-family: 'Prompt';
     font-weight: 300;
     text-align: center;

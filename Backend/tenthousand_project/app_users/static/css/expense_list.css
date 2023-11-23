@@ -44,7 +44,7 @@ a:hover {
     color: black;
 }
 .round {
-    border-radius: 50%;
+    border-radius: 100%;
 }
 .ADD{
     font-size: 3vh;
