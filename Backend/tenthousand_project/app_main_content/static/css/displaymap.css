@@ -77,12 +77,15 @@ select{
     left: 0px; 
     top: 0px
 }
-button{
+
+button {
+    border: 0;
     text-align: center;
     margin-right: 10%;
     margin-left: 15%;
     background-color: white;
 }
+
 form{
     width: 25vw;
 }

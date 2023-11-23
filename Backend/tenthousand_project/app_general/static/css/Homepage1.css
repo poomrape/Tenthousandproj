@@ -10,12 +10,21 @@
     z-index: 1;
 }
 body {
-    overflow-x: hidden;
+    overflow-x: hidden; 
     background-color: #161A2A;
     font-family: "Kanit", sans-serif;
     max-width: 1500px; /* ปรับตามต้องการ */
     max-height: 1000px;  /*กำหนดความสูงของหน้าเว็บ */
     margin: 0;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none; 
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 #image1{
     width: 55%;

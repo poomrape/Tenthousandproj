@@ -33,8 +33,9 @@ function initMap() {
           var endLongitude = parseFloat(endCoordinates[1].trim());
 
           var end = new google.maps.LatLng(endLatitude, endLongitude);
+          var start = new google.maps.LatLng(startLatitude, startLongitude)
 
-          calculateAndDisplayRoute(startLatitude, startLongitude, end);
+          calculateAndDisplayRoute(endLatitude, endLongitude, start);
       });
   });
 }
